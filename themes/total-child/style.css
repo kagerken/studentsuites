@@ -1,0 +1,427 @@
+/*
+Theme Name: Total Child
+Theme URI: https://tdegisi.web.csit.jccc.edu/studentsuites/
+description: >-
+  Total Child Theme
+Author: Talia DeGisi, Kyle Gerken, Jordan Luna
+Template: total
+Version: 1.0.0
+*/
+
+/*.ht-site-title a {
+    font-style: italic;
+}*/
+
+body, button, input, select, textarea {
+	font-family: 'Avenir Light', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .ht-site-title, .ht-post-info, .ht-main-navigation a {
+	font-family: 'Avenir Heavy', sans-serif;
+}
+
+@font-face {
+	font-family: 'Avenir Light';
+	src: url('fonts/Avenir Light.otf');
+}
+
+@font-face {
+	font-family: 'Avenir Heavy';
+	src: url('fonts/Avenir Heavy.ttf');
+}
+
+/* Heading Adjust ----------------------------- */
+/* adjust the height of the sticky header, give more whitespace to the element */
+.ht-sticky#ht-masthead{
+	height: 82px;
+}
+
+/* End Heading Adjust ------------------------- */
+
+
+
+/* Typography Helpers ------------------------- */
+
+blockquote, q{
+	border-left: 5px solid #67C7C5;
+	padding-left: 15px;
+}
+
+.entry-content a{
+/* style for links within the content blocks */
+	font-weight: 600;
+}
+.bolded{
+	font-weight:bold;
+}
+.italic{
+	font-style: italic;
+}
+.uppercase{
+	text-transform: uppercase;
+}
+.lowercase{
+	text-transform: lowercase;
+}
+
+/* End Typography -------------------------------- */
+
+/* Grid Containers ----------------------------------*/
+
+.grid-container{
+	margin: .5em initial;
+}
+.grid-row{
+	display: flex;
+	flex-direction: row;
+}
+.grid-row-reverse{
+	display: flex;
+	flex-direction: row-reverse;
+}
+.grid-row-full{
+	width:100%;
+}
+.grid-row-centered{
+	width: 80%;
+	margin: 0 auto;
+}
+.grid-flex-wrap{
+	flex-wrap: wrap;
+}
+.grid-flex-none{
+	flex-wrap: nowrap;
+}
+.grid-item-1{
+	width: 100%;
+}
+.grid-item-2{
+	width: 50%;
+}
+.grid-item-3{
+	width: 33.33%;
+}
+.grid-item-4{
+	width: 25%;
+}
+
+/* special grid */
+.grid-item-25{
+	width: 25%;
+}
+.grid-item-75{
+	width: 75%;
+}
+
+/* End Grid -------------------------------------- */
+
+
+
+
+/* Container Types ------------------------------- */
+.relative{
+	position: relative;
+	display: block;
+}
+
+/* End Container Types --------------------------- */
+
+/* Element Spacing ------------------------------- */
+
+/* vertical padding */
+.l-padding-vertical{
+	padding: 1.5em 0;
+}
+.m-padding-vertical{
+	padding: 1em 0;
+}
+.s-padding-vertical{
+	padding: .5em 0;
+}
+.xs-padding-vertical{
+	padding: .25em 0;
+}
+.l-t-padding{
+	padding-top: 1.5em;
+}
+.m-t-padding{
+	padding-top: 1em;
+}
+.s-t-padding{
+	padding-top: .5em;
+}
+.xs-t-padding{
+	padding-top: .25em;
+}
+.l-b-padding{
+	padding-bottom: 1.5em;
+}
+.m-b-padding{
+	padding-bottom: 1em;
+}
+.s-b-padding{
+	padding-bottom: .5em;
+}
+.xs-b-padding{
+	padding-bottom: .25em;
+}
+/* horizontal padding */
+.l-padding-horizontal{
+	padding: 0 1.5em;
+}
+.m-padding-horizontal{
+	padding: 0 1em;
+}
+.s-padding-horizontal{
+	padding: 0 .5em;
+}
+.xs-padding-horizontal{
+	padding: 0 .25em;
+}
+.l-l-padding{
+	padding-left: 1.5em;
+}
+.m-l-padding{
+	padding-left: 1em;
+}
+.s-l-padding{
+	padding-left: .5em;
+}
+.xs-l-padding{
+	padding-left: .25em;
+}
+.l-r-padding{
+	padding-right: 1.5em;
+}
+.m-r-padding{
+	padding-right: 1em;
+}
+.s-r-padding{
+	padding-right: .5em;
+}
+.xs-r-padding{
+	padding-right: .25em;
+}
+
+/* horizontal margin */
+.l-margin-horizontal{
+	margin: 0 1.5em;
+}
+.m-margin-horizontal{
+	margin: 0 1em;
+}
+.s-margin-horizontal{
+	margin: 0 .5em;
+}
+.xs-margin-horizontal{
+	margin: 0 .25em;
+}
+.l-l-margin{
+	margin-left: 1.5em;
+}
+.m-l-margin{
+	margin-left: 1em;
+}
+.s-l-margin{
+	margin-left: .5em;
+}
+.xs-l-margin{
+	margin-left: .25em;
+}
+.l-r-margin{
+	margin-right: 1.5em;
+}
+.m-r-margin{
+	margin-right: 1em;
+}
+.s-r-margin{
+	margin-right: .5em;
+}
+.xs-r-margin{
+	margin-right: .25em;
+}
+
+/* vertical margin */
+.l-margin-vertical{
+	margin: 1.5em 0;
+}
+.m-margin-vertical{
+	margin: 1em 0;
+}
+.s-margin-vertical{
+	margin: .5em 0;
+}
+.xs-margin-vertical{
+	margin: .25em 0;
+}
+.l-b-margin{
+	margin-bottom: 1.5em;
+}
+.m-b-margin{
+	margin-bottom: 1em;
+}
+.s-b-margin{
+	margin-bottom: .5em;
+}
+.xs-b-margin{
+	margin-bottom: .25em;
+}
+.l-t-margin{
+	margin-top: 1.5em;
+}
+.m-t-margin{
+	margin-top: 1em;
+}
+.s-t-margin{
+	margin-top: .5em;
+}
+.xs-t-margin{
+	margin-top: .25em;
+}
+
+
+
+/* End Element Spacing --------------------------- */
+
+
+
+/* Colors ---------------------------------------- */
+
+.black{
+	background-color: #000000;
+}
+.soft-black{
+	background-color: #191919;
+}
+.primary-purple{
+	background-color: #6C207E;
+}
+.secondary-purple{
+	background-color: #7D4199;
+}
+.tertiary-purple{
+	background-color: #9370B1;
+}
+.cool-gray{
+	background-color: #ADAFB1;
+}
+.white{
+	background-color: #FFFFFF;
+}
+.off-white{
+	background-color: #EAEAEA;
+}
+.teal{
+	background-color: #67C7C5;
+}
+.coral{
+	background-color: #F48366;
+}
+.pale-yellow{
+	background-color: #FFF9C3;
+}
+
+/* End Colors ------------------------------------ */
+/* Back to Top ----------------------------------- */
+#ht-back-top{
+	background-color: #191919;
+}
+
+/* End Back to Top */
+
+/* Form Fields ----------------------------------- */
+input[type="text"], input[type="email"], input[type="url"], input[type="password"],
+input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"],
+input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"],
+input[type="color"], textarea{
+	border: 1px solid #ADAFB1;
+	box-shadow: 2px 2px 1px #67C7C5;
+}
+input[type="text"]:hover, input[type="email"]:hover, input[type="url"]:hover, input[type="password"]:hover,
+input[type="search"]:hover, input[type="number"]:hover, input[type="tel"]:hover, input[type="range"]:hover, input[type="date"]:hover,
+input[type="month"]:hover, input[type="week"]:hover, input[type="time"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover,
+input[type="color"]:hover, textarea:hover{
+	border: 2px solid #7D4199;
+}
+input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus,
+input[type="search"]:focus, input[type="number"]:focus, input[type="tel"]:focus, input[type="range"]:focus, input[type="date"]:focus,
+input[type="month"]:focus, input[type="week"]:focus, input[type="time"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus,
+input[type="color"]:focus, textarea:focus{
+	border: 2px solid #7D4199;
+}
+input[type="radio"], input[type="checkbox"]{
+	margin-right: .5em;
+}
+
+/* End Form Fields -------------------------------- */
+
+/* Style Guide Styling ---------------------------- */
+.ss-style-guide-heading-container{
+	position:relative;
+	border-bottom: 3px solid #9370B1;
+	margin-bottom: 1em;
+}
+.ss-style-guide-logo{
+	max-width:150px;
+	max-height:150px;
+}
+.ss-style-guide-main-heading{
+	position:absolute;
+	top: 50%;
+	left: 33%;
+}
+
+.ss-style-guide-responsive-container{
+	width: 100%;
+	height: 300px;
+	display:block;
+	box-sizing: border-box;
+	margin-top: 1.5em;
+}
+.ss-style-guide-responsive-container .ss-style-guide-responsive-text{
+	position: absolute;
+	margin: 0;
+	left: 10px;
+	bottom: 0;
+}
+.ss-style-guide-responsive-border-guides{
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	border-radius: 2px;
+	margin: 0 auto 2em auto;
+	padding: 0;
+}
+.ss-style-guide-desktop{
+	width: 62.5%;
+	height: 90%;
+}
+.ss-style-guide-large-tablet{
+	width: 85%;
+	height: 85%;
+}
+.ss-style-guide-tablet{
+	width: 75.29%;	
+	height: 85%;
+	
+}
+.ss-style-guide-mobile{
+	width: 75.52%;
+	height: 85%;
+}
+.ss-style-guide-small-devices{
+	width: 82.76%;
+	height: 75%;
+}
+
+.ss-style-guide-soft-border{
+	border-bottom: 2px solid #EAEAEA;
+}
+.ss-style-guide-color{
+	display:block;
+}
+
+/* End Style Guide Styling ------------------------ */
+
+
+
