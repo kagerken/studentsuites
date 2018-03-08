@@ -12,8 +12,6 @@ Version: 1.0.0
     font-style: italic;
 }*/
 
-/* TEST */
-
 body, button, input, select, textarea {
 	font-family: 'Avenir Light', sans-serif;
 }
@@ -331,7 +329,7 @@ blockquote, q{
 
 /* End Back to Top */
 
-/* Form Fields ----------------------------------- */
+/* Form ----------------------------------- */
 input[type="text"], input[type="email"], input[type="url"], input[type="password"],
 input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"],
 input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"],
@@ -354,8 +352,11 @@ input[type="color"]:focus, textarea:focus{
 input[type="radio"], input[type="checkbox"]{
 	margin-right: .5em;
 }
+label{
+	font-weight: bold;
+}
 
-/* End Form Fields -------------------------------- */
+/* End Form -------------------------------- */
 
 /* Style Guide Styling ---------------------------- */
 .ss-style-guide-heading-container{
