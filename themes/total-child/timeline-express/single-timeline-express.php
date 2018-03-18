@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-
+<h1>This is a a test</h1>
 <header class="ht-main-header">
 	<div class="ht-container">
 		<?php the_title( '<h1 class="ht-main-title">', '</h1>' ); ?>
