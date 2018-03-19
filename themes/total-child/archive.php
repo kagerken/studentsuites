@@ -11,10 +11,12 @@ get_header(); ?>
 
 <header class="ht-main-header">
 	<div class="ht-container">
-		<?php
-			the_archive_title( '<h1 class="ht-main-title">', '</h1>' );
+		<h1><?php
+			single_cat_title();
+			//the_archive_title( '<h1 class="ht-main-title">', '</h1>' );
 			//the_archive_description( '<div class="taxonomy-description">', '</div>' );
 		?>
+		</h1>
 	</div>
 </header><!-- .ht-main-header -->
 

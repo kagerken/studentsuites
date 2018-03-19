@@ -45,34 +45,6 @@
 
 		</header><!-- .entry-header -->
 
-
-
-		<div class="entry-categories">
-
-            <?php echo total_entry_category(); ?>
-
-		</div>
-
-        
-
-		<div class="entry-content">
-
-			<?php
-
-				echo wp_trim_words( get_the_content(), 130 );
-
-			?>
-
-		</div><!-- .entry-content -->
-
-
-
-		<div class="entry-readmore">
-
-			<a href="<?php the_permalink(); ?>"><?php _e( 'Read More', 'total' ); ?></a>
-
-		</div>
-
 	</div>
 
 </article><!-- #post-## -->
