@@ -354,6 +354,7 @@ input[type="radio"], input[type="checkbox"]{
 }
 label{
 	font-weight: bold;
+	display: inline-block;
 }
 
 /* End Form -------------------------------- */
@@ -426,5 +427,11 @@ label{
 
 /* End Style Guide Styling ------------------------ */
 
+/* Talia's logo adjustments */
 
-
+#ht-site-branding img {
+    max-height: 75px;
+    position: relative;
+    bottom: 10px;
+}
+/* end Talia's logo adjustments */
