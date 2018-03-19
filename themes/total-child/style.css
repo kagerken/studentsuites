@@ -329,7 +329,7 @@ blockquote, q{
 
 /* End Back to Top */
 
-/* Form ----------------------------------- */
+/* Form Fields ----------------------------------- */
 input[type="text"], input[type="email"], input[type="url"], input[type="password"],
 input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"],
 input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"],
@@ -352,12 +352,8 @@ input[type="color"]:focus, textarea:focus{
 input[type="radio"], input[type="checkbox"]{
 	margin-right: .5em;
 }
-label{
-	font-weight: bold;
-	display: inline-block;
-}
 
-/* End Form -------------------------------- */
+/* End Form Fields -------------------------------- */
 
 /* Style Guide Styling ---------------------------- */
 .ss-style-guide-heading-container{
@@ -425,7 +421,60 @@ label{
 	display:block;
 }
 
-/* End Style Guide Styling ------------------------ */
+/*----announcements page--------------
+
+.ht-month-year{
+    display: none;
+}
+.ht-post-info .entry-date{
+    display: none;
+}
+*/
+
+
+/* Contact Us Page --------------------------- */
+.container input[type="submit"], .container input[type="reset"]{
+	display: inline-block;
+}
+.contact-input{
+	width: 150px;
+}
+.contact-textarea{
+	width: 70%;
+	height: 150px;
+}
+
+/* Responsive Styling ------------------------ */
+@media screen and (min-width: 480px){
+	.contact-container form, .contact-container > div{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 479px){
+	
+
+}
+@media screen and (min-width:1200px){
+	.contact-input{
+		width: 300px;
+	}
+}
+@media screen and (min-width:1020px){
+	.contact-container form, .contact-container > div{
+		width: 50%;
+	}
+
+}
+@media screen and(max-width: 1019px){
+
+}
+@media screen and (min-width: 768px){
+
+	
+}
+@media screen and (min-width: 580px){
+	
+}
 
 /* Talia's logo adjustments */
 
