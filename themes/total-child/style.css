@@ -467,6 +467,12 @@ h2, h3, h4, h5, h6 {
 	text-align: center;
 	border-bottom: 3px #EAEAEA solid;
 	border-top: 3px #EAEAEA solid;
+	padding: .25em;
+}
+
+section {
+	margin-top: .25em;
+	margin-bottom: .75em;
 }
 
 li {
