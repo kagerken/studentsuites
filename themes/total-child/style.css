@@ -36,6 +36,14 @@ h1, h2, h3, h4, h5, h6, .ht-site-title, .ht-post-info, .ht-main-navigation a {
 	height: 82px;
 }
 
+ 
+#ht-site-branding img {
+    max-height: 75px;
+    position: relative;
+    bottom: 10px;
+}
+
+
 /* End Heading Adjust ------------------------- */
 
 
@@ -422,6 +430,47 @@ input[type="radio"], input[type="checkbox"]{
 }
 
 /* End Style Guide Styling ------------------------ */
+/* Contact Us Page --------------------------- */
+.container input[type="submit"], .container input[type="reset"]{
+	display: inline-block;
+}
+.contact-input{
+	width: 150px;
+}
+.contact-textarea{
+	width: 70%;
+	height: 150px;
+}
+/*trying something out */
 
+/* Talia's logo adjustments */
 
+#ht-site-branding img {
+    max-height: 75px;
+    position: relative;
+    bottom: 10px;
+}
+/* end Talia's logo adjustments */
 
+/* Talia's experimental tweaks */
+
+.ht_no_sidebar_condensed #primary {
+	width: 85%;
+}
+
+h2, h3, h4, h5, h6 {
+	color: #6C207E;
+	margin: 1em 0 .5em 0;
+}
+
+.centered-headings h1, .centered-headings h2, .centered-headings h3, .centered-headings h4, .centered-headings h5, .centered-headings h6 {
+	text-align: center;
+	border-bottom: 3px #EAEAEA solid;
+	border-top: 3px #EAEAEA solid;
+}
+
+li {
+    margin-bottom: .25em;
+}
+
+/* Talia's experimental tweaks end */
