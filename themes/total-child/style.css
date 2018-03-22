@@ -460,6 +460,7 @@ input[type="radio"], input[type="checkbox"]{
 
 h2, h3, h4, h5, h6 {
 	color: #6C207E;
+	margin: 1em 0 .5em 0;
 }
 
 .centered-headings h1, .centered-headings h2, .centered-headings h3, .centered-headings h4, .centered-headings h5, .centered-headings h6 {
