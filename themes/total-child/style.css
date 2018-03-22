@@ -444,6 +444,7 @@ input[type="radio"], input[type="checkbox"]{
 	height: 150px;
 }
 
+
 /* Responsive Styling ------------------------ */
 @media screen and (min-width: 480px){
 	.contact-container form, .contact-container > div{
