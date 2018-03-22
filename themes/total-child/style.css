@@ -451,3 +451,19 @@ input[type="radio"], input[type="checkbox"]{
     bottom: 10px;
 }
 /* end Talia's logo adjustments */
+
+/* Talia's experimental tweaks */
+
+.ht_no_sidebar_condensed #primary {
+	width: 85%;
+}
+
+h2, h3, h4, h5, h6 {
+	color: #6C207E;
+}
+
+.centered-headings h1, .centered-headings h2, .centered-headings h3, .centered-headings h4, .centered-headings h5, .centered-headings h6 {
+	text-align: center;
+}
+
+/* Talia's experimental tweaks end */
