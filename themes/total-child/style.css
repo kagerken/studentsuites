@@ -464,6 +464,8 @@ h2, h3, h4, h5, h6 {
 
 .centered-headings h1, .centered-headings h2, .centered-headings h3, .centered-headings h4, .centered-headings h5, .centered-headings h6 {
 	text-align: center;
+	border-bottom: 3px #EAEAEA solid;
+	border-top: 3px #EAEAEA solid;
 }
 
 /* Talia's experimental tweaks end */
