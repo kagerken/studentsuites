@@ -468,4 +468,8 @@ h2, h3, h4, h5, h6 {
 	border-top: 3px #EAEAEA solid;
 }
 
+li {
+    margin-bottom: .25em;
+}
+
 /* Talia's experimental tweaks end */
