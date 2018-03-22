@@ -430,16 +430,6 @@ input[type="radio"], input[type="checkbox"]{
 }
 
 /* End Style Guide Styling ------------------------ */
-
-.ht-month-year{
-    display: none;
-}
-.ht-post-info .entry-date{
-    display: none;
-}
-*/
-
-
 /* Contact Us Page --------------------------- */
 .container input[type="submit"], .container input[type="reset"]{
 	display: inline-block;
@@ -451,38 +441,7 @@ input[type="radio"], input[type="checkbox"]{
 	width: 70%;
 	height: 150px;
 }
-
-/* Responsive Styling ------------------------ */
-@media screen and (min-width: 480px){
-	.contact-container form, .contact-container > div{
-		width: 100%;
-	}
-}
-@media screen and (max-width: 479px){
-	
-
-}
-@media screen and (min-width:1200px){
-	.contact-input{
-		width: 300px;
-	}
-}
-@media screen and (min-width:1020px){
-	.contact-container form, .contact-container > div{
-		width: 50%;
-	}
-
-}
-@media screen and(max-width: 1019px){
-
-}
-@media screen and (min-width: 768px){
-
-	
-}
-@media screen and (min-width: 580px){
-	
-}
+/*trying something out */
 
 /* Talia's logo adjustments */
 
