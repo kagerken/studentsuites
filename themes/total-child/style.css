@@ -424,6 +424,18 @@ input[type="radio"], input[type="checkbox"]{
 	display:block;
 }
 
+/*----announcements page--------------*/
+
+/*.ht-month-year{
+    display: none;
+}*/
+.ht-post-info .entry-date{
+    display: none;
+}
+
+
+
+
 /* End Style Guide Styling ------------------------ */
 
 
