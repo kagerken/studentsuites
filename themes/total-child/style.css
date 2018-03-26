@@ -11,7 +11,7 @@ Version: 1.0.0
 /*.ht-site-title a {
     font-style: italic;
 }*/
-/*( change )*/
+
 body, button, input, select, textarea {
 	font-family: 'Avenir Light', sans-serif;
 }
@@ -337,7 +337,7 @@ blockquote, q{
 
 /* End Back to Top */
 
-/* Form ----------------------------------- */
+/* Form Fields ----------------------------------- */
 input[type="text"], input[type="email"], input[type="url"], input[type="password"],
 input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"],
 input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"],
@@ -360,12 +360,8 @@ input[type="color"]:focus, textarea:focus{
 input[type="radio"], input[type="checkbox"]{
 	margin-right: .5em;
 }
-label{
-	font-weight: bold;
-	display: inline-block;
-}
 
-/* End Form -------------------------------- */
+/* End Form Fields -------------------------------- */
 
 /* Style Guide Styling ---------------------------- */
 .ss-style-guide-heading-container{
@@ -433,6 +429,18 @@ label{
 	display:block;
 }
 
+/*----announcements page--------------*/
+
+/*.ht-month-year{
+    display: none;
+}*/
+.ht-post-info .entry-date{
+    display: none;
+}
+
+
+
+
 /* End Style Guide Styling ------------------------ */
 /* Contact Us Page --------------------------- */
 .container input[type="submit"], .container input[type="reset"]{
@@ -447,37 +455,6 @@ label{
 }
 /*trying something out */
 
-/* Responsive Styling ------------------------ */
-@media screen and (min-width: 480px){
-	.contact-container form, .contact-container > div{
-		width: 100%;
-	}
-}
-@media screen and (max-width: 479px){
-	
-
-}
-@media screen and (min-width:1200px){
-	.contact-input{
-		width: 300px;
-	}
-}
-@media screen and (min-width:1020px){
-	.contact-container form, .contact-container > div{
-		width: 50%;
-	}
-
-}
-@media screen and(max-width: 1019px){
-
-}
-@media screen and (min-width: 768px){
-
-	
-}
-@media screen and (min-width: 580px){
-	
-}
 /* Talia's logo adjustments */
 
 #ht-site-branding img {
@@ -486,3 +463,32 @@ label{
     bottom: 10px;
 }
 /* end Talia's logo adjustments */
+
+/* Talia's experimental tweaks */
+
+.ht_no_sidebar_condensed #primary {
+	width: 85%;
+}
+
+h2, h3, h4, h5, h6 {
+	color: #6C207E;
+	margin: 1em 0 .85em 0;
+}
+
+.centered-headings h1, .centered-headings h2, .centered-headings h3, .centered-headings h4, .centered-headings h5, .centered-headings h6 {
+	text-align: center;
+	border-bottom: 3px #EAEAEA solid;
+	border-top: 3px #EAEAEA solid;
+	padding: .25em;
+}
+
+section {
+	margin-top: .25em;
+	margin-bottom: .75em;
+}
+
+li {
+    margin-bottom: .25em;
+}
+
+/* Talia's experimental tweaks end */
