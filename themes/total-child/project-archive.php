@@ -6,6 +6,7 @@
  */
 
 get_header(); ?>
+<h1>This is the subtheme project-archive.php</h1>
 <?php 
 	$catquery = new WP_Query( '' );
 	$blog_page_id = get_option('page_for_posts');

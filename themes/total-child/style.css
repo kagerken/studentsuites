@@ -444,7 +444,7 @@ input[type="radio"], input[type="checkbox"]{
 /* End Style Guide Styling ------------------------ */
 /* Contact Us Page --------------------------- */
 .container input[type="submit"], .container input[type="reset"]{
-	display: inline-block;
+	display: block;
 }
 .contact-input{
 	width: 150px;
