@@ -6,6 +6,7 @@
  */
 
 ?>
+<?php get_header();?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
@@ -24,3 +25,4 @@
 
 </article><!-- #post-## -->
 
+<?php get_footer();?>

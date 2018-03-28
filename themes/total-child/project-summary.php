@@ -6,15 +6,13 @@
 
  *
 
- * @package Total
+ * @package Total-Child
 
  */
 
 
 
 ?>
-
-
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('total-hentry'); ?>>
 
