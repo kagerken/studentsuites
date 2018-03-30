@@ -444,7 +444,7 @@ input[type="radio"], input[type="checkbox"]{
 /* End Style Guide Styling ------------------------ */
 /* Contact Us Page --------------------------- */
 .container input[type="submit"], .container input[type="reset"]{
-	display: block;
+	display: inline-block;
 }
 .contact-input{
 	width: 150px;
@@ -471,14 +471,25 @@ input[type="radio"], input[type="checkbox"]{
 }
 
 h2, h3, h4, h5, h6 {
-	color: #6C207E;
 	margin: 1em 0 .85em 0;
+	border-bottom: 3px #6c207e solid;
+}
+
+h3 {
+	border-width: 2px;
+}
+
+h4 {
+	border-width: 1px;
+}
+
+h5, h6 {
+	border-width: 0;
 }
 
 .centered-headings h1, .centered-headings h2, .centered-headings h3, .centered-headings h4, .centered-headings h5, .centered-headings h6 {
 	text-align: center;
-	border-bottom: 3px #EAEAEA solid;
-	border-top: 3px #EAEAEA solid;
+	/*border-top: 3px #EAEAEA solid;*/
 	padding: .25em;
 }
 
