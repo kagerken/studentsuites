@@ -8,7 +8,7 @@
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-		<div class="grid-row m-padding-vertical">
+		<div class="grid-row m-padding-vertical m-b-margin">
 			<div class="project-photo-container s-padding-horizontal">
 				<?php the_post_thumbnail('total-blog-header'); // I need to define a custom one in our theme functions
 				?>

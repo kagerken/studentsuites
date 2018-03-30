@@ -140,16 +140,16 @@ blockquote, q{
 /* Element Spacing ------------------------------- */
 
 /* vertical padding */
-.l-padding-vertical{
+.l-v-padding{
 	padding: 1.5em 0;
 }
-.m-padding-vertical{
+.m-v-padding{
 	padding: 1em 0;
 }
-.s-padding-vertical{
+.s-v-padding{
 	padding: .5em 0;
 }
-.xs-padding-vertical{
+.xs-v-padding{
 	padding: .25em 0;
 }
 .l-t-padding{
@@ -177,16 +177,16 @@ blockquote, q{
 	padding-bottom: .25em;
 }
 /* horizontal padding */
-.l-padding-horizontal{
+.l-h-padding{
 	padding: 0 1.5em;
 }
-.m-padding-horizontal{
+.m-h-padding{
 	padding: 0 1em;
 }
-.s-padding-horizontal{
+.s-h-padding{
 	padding: 0 .5em;
 }
-.xs-padding-horizontal{
+.xs-h-padding{
 	padding: 0 .25em;
 }
 .l-l-padding{
@@ -214,17 +214,43 @@ blockquote, q{
 	padding-right: .25em;
 }
 
+/* all padding */
+.l-a-padding{
+	padding: 1.5em;
+}
+.m-a-padding{
+	padding: 1em;
+}
+.s-a-padding{
+	padding: .5em;
+}
+.xs-a-padding{
+	padding: .25em;
+}
+/* all margin */
+.l-a-margin{
+	margin: 1.5em;
+}
+.m-a-margin{
+	margin: 1em;
+}
+.s-a-margin{
+	margin: .5em;
+}
+.xs-a-margin{
+	margin: .25em;
+}
 /* horizontal margin */
-.l-margin-horizontal{
+.l-h-margin{
 	margin: 0 1.5em;
 }
-.m-margin-horizontal{
+.m-h-margin{
 	margin: 0 1em;
 }
-.s-margin-horizontal{
+.s-h-margin{
 	margin: 0 .5em;
 }
-.xs-margin-horizontal{
+.xs-h-margin{
 	margin: 0 .25em;
 }
 .l-l-margin{
@@ -252,17 +278,17 @@ blockquote, q{
 	margin-right: .25em;
 }
 
-/* vertical margin */
-.l-margin-vertical{
+/* vertical margins */
+.l-v-margin{
 	margin: 1.5em 0;
 }
-.m-margin-vertical{
+.m-v-margin{
 	margin: 1em 0;
 }
-.s-margin-vertical{
+.s-v-margin{
 	margin: .5em 0;
 }
-.xs-margin-vertical{
+.xs-v-margin{
 	margin: .25em 0;
 }
 .l-b-margin{
