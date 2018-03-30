@@ -22,7 +22,7 @@ get_header(); ?>
 <h1>This is the page</h1>
 
 <div class="ht-container">
-	<div id="primary" class="content-area">
+	<div class="content-area">
 		<main id="main" class="site-main" role="main">
 
 		<?php if (have_posts() ) : ?>
