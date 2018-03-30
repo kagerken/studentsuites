@@ -346,19 +346,18 @@ input[type="search"], input[type="number"], input[type="tel"], input[type="range
 input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"],
 input[type="color"], textarea{
 	border: 1px solid #ADAFB1;
-	box-shadow: 2px 2px 1px #67C7C5;
 }
 input[type="text"]:hover, input[type="email"]:hover, input[type="url"]:hover, input[type="password"]:hover,
 input[type="search"]:hover, input[type="number"]:hover, input[type="tel"]:hover, input[type="range"]:hover, input[type="date"]:hover,
 input[type="month"]:hover, input[type="week"]:hover, input[type="time"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover,
 input[type="color"]:hover, textarea:hover{
-	border: 2px solid #7D4199;
+	box-shadow: 0 0 5px #9370B1;
 }
 input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus,
 input[type="search"]:focus, input[type="number"]:focus, input[type="tel"]:focus, input[type="range"]:focus, input[type="date"]:focus,
 input[type="month"]:focus, input[type="week"]:focus, input[type="time"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus,
 input[type="color"]:focus, textarea:focus{
-	border: 2px solid #7D4199;
+	box-shadow: 0 0 5px #6C207E;
 }
 input[type="radio"], input[type="checkbox"]{
 	margin-right: .5em;
@@ -464,6 +463,9 @@ input[type="radio"], input[type="checkbox"]{
 .contact-container label, .contact-container input{
 	display:block;
 
+}
+.contact-container input {
+    margin-bottom: 1em;
 }
 .contact-input{
 	width: 70%;
