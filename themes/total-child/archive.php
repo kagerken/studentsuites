@@ -11,22 +11,18 @@ get_header(); ?>
 <header class="ht-main-header">
 	<div class="ht-container">
 		<h1><?php
-			single_cat_title();
-			//the_archive_title( '<h1 class="ht-main-title">', '</h1>' );
-			//the_archive_description( '<div class="taxonomy-description">', '</div>' );
+			wp_title('');
 		?>
 		</h1>
 	</div>
 </header><!-- .ht-main-header -->
-
-<h1>This is the page</h1>
 
 <div class="ht-container">
 	<div class="content-area">
 		<main id="main" class="site-main" role="main">
 
 		<?php if (have_posts() ) : ?>
-
+			<div class="grid-row grid-flex-wrap">
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 				
@@ -41,7 +37,7 @@ get_header(); ?>
 				?>
 
 			<?php endwhile; ?>
-
+			</div>
 		<?php else : ?>
 
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
