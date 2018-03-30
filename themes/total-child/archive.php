@@ -19,7 +19,7 @@ get_header(); ?>
 	</div>
 </header><!-- .ht-main-header -->
 
-
+<h1>This is the page</h1>
 
 <div class="ht-container">
 	<div id="primary" class="content-area">
