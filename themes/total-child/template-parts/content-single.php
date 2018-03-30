@@ -8,12 +8,12 @@
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-		<div class="grid-row m-padding-vertical m-b-margin">
-			<div class="project-photo-container s-padding-horizontal">
+		<div class="grid-row m-v-padding m-b-margin">
+			<div class="project-photo-container s-h-padding">
 				<?php the_post_thumbnail('total-blog-header'); // I need to define a custom one in our theme functions
 				?>
 			</div>
-			<div class="project-information-container s-padding-horizontal">
+			<div class="project-information-container s-h-padding">
 				<div><span class="xs-r-margin bolded">Date Completed:</span><?php the_field('date_completed');?></div>
 				<div><span class="xs-r-margin bolded">Total Cost:</span>$<?php the_field('project_cost');?></div>
 				<div><span class="xs-r-margin bolded"># of Beds:</span><?php the_field('project_beds');?></div>
