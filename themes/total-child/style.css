@@ -357,7 +357,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, in
 input[type="search"]:focus, input[type="number"]:focus, input[type="tel"]:focus, input[type="range"]:focus, input[type="date"]:focus,
 input[type="month"]:focus, input[type="week"]:focus, input[type="time"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus,
 input[type="color"]:focus, textarea:focus{
-	box-shadow: 0 0 5px #6C207E;
+	box-shadow: 0 0 7px #6C207E;
 }
 input[type="radio"], input[type="checkbox"]{
 	margin-right: .5em;
@@ -467,9 +467,13 @@ input[type="radio"], input[type="checkbox"]{
 .contact-container label {
 	font-family: 'Avenir Heavy', sans-serif;
 	font-size: 1.03em;
+	margin-bottom: .3em;
 }
 .contact-container input {
-    margin-bottom: 1em;
+    margin-bottom: 1.25em;
+}
+.contact-container input, .contact-container textarea {
+	margin-left: 1.25em;
 }
 .contact-input{
 	width: 70%;
