@@ -351,7 +351,7 @@ input[type="text"]:hover, input[type="email"]:hover, input[type="url"]:hover, in
 input[type="search"]:hover, input[type="number"]:hover, input[type="tel"]:hover, input[type="range"]:hover, input[type="date"]:hover,
 input[type="month"]:hover, input[type="week"]:hover, input[type="time"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover,
 input[type="color"]:hover, textarea:hover{
-	box-shadow: 0 0 5px #9370B1;
+	box-shadow: 0 0 2px #6C207E;
 }
 input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus,
 input[type="search"]:focus, input[type="number"]:focus, input[type="tel"]:focus, input[type="range"]:focus, input[type="date"]:focus,
@@ -464,6 +464,10 @@ input[type="radio"], input[type="checkbox"]{
 	display:block;
 
 }
+.contact-container label {
+	font-family: 'Avenir Heavy', sans-serif;
+	font-size: 1.03em;
+}
 .contact-container input {
     margin-bottom: 1em;
 }
@@ -510,7 +514,6 @@ input[type="radio"], input[type="checkbox"]{
 
 h2, h3, h4, h5, h6 {
 	margin: 1em 0 .85em 0;
-	border-bottom: 3px #6c207e solid;
 }
 
 h3 {
@@ -529,6 +532,7 @@ h5, h6 {
 	text-align: center;
 	/*border-top: 3px #EAEAEA solid;*/
 	padding: .25em;
+	border-bottom: 3px #6c207e solid;
 }
 
 section {
