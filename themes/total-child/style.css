@@ -460,6 +460,9 @@ input[type="radio"], input[type="checkbox"]{
 	width:100%;
 	flex-wrap:wrap;
 }
+.contact-container h2 {
+	text-indent: -.5em;
+}
 .contact-container label, .contact-container input{
 	display:block;
 
@@ -515,6 +518,12 @@ input[type="radio"], input[type="checkbox"]{
 .ht_no_sidebar_condensed #primary {
 	width: 85%;
 }
+
+.ht-main-header {
+	background: #EAEAEA;
+	padding: 2em 0;
+	text-align: center;
+}	
 
 h2, h3, h4, h5, h6 {
 	margin: 1em 0 .85em 0;
