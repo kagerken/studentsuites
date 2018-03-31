@@ -472,7 +472,7 @@ input[type="radio"], input[type="checkbox"]{
 .contact-container input {
     margin-bottom: 1.25em;
 }
-.contact-container input, .contact-container textarea {
+.contact-input, .contact-container textarea {
 	margin-left: 1.25em;
 }
 .contact-input{
