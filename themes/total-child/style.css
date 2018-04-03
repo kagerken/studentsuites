@@ -503,8 +503,18 @@ input[type="radio"], input[type="checkbox"]{
 	Projects - Single
 	-----------------------------------------
 */
+.project-grid-row{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
 
+}
+.project-grid-row .project-photo-container{
 
+}
+.project-grid-row .project-information-container{
+
+}
 
 
 
@@ -559,6 +569,15 @@ li {
 	}
 	.contact-container > *{
 		width:100%;
+		flex-wrap:nowrap;
+	}
+
+	/*
+	----------------------------
+		Projects
+	----------------------------
+	*/
+	.project-grid-row{
 		flex-wrap:nowrap;
 	}
 }

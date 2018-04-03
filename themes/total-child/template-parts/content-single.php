@@ -9,12 +9,12 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-		<div class="grid-row m-v-padding m-b-margin">
-			<div class="project-photo-container s-h-padding">
+		<div class="project-grid-row m-v-padding m-b-margin">
+			<div class="project-photo-container s-h-padding s-b-margin">
 				<?php the_post_thumbnail('total-blog-header'); // I need to define a custom one in our theme functions
 				?>
 			</div>
-			<div class="project-information-container s-h-padding">
+			<div class="project-information-container s-h-padding s-b-margin">
 				<ul>
 					<li><span class="xs-r-margin bolded">Date Completed:</span><?php the_field('date_completed');?></li>
 					<li><span class="xs-r-margin bolded">Total Cost:</span>$<?php the_field('project_cost');?></li>
