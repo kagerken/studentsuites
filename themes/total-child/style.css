@@ -372,19 +372,18 @@ input[type="search"], input[type="number"], input[type="tel"], input[type="range
 input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"],
 input[type="color"], textarea{
 	border: 1px solid #ADAFB1;
-	box-shadow: 2px 2px 1px #67C7C5;
 }
 input[type="text"]:hover, input[type="email"]:hover, input[type="url"]:hover, input[type="password"]:hover,
 input[type="search"]:hover, input[type="number"]:hover, input[type="tel"]:hover, input[type="range"]:hover, input[type="date"]:hover,
 input[type="month"]:hover, input[type="week"]:hover, input[type="time"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover,
 input[type="color"]:hover, textarea:hover{
-	border: 2px solid #7D4199;
+	box-shadow: 0 0 2px #6C207E;
 }
 input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus,
 input[type="search"]:focus, input[type="number"]:focus, input[type="tel"]:focus, input[type="range"]:focus, input[type="date"]:focus,
 input[type="month"]:focus, input[type="week"]:focus, input[type="time"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus,
 input[type="color"]:focus, textarea:focus{
-	border: 2px solid #7D4199;
+	box-shadow: 0 0 7px #6C207E;
 }
 input[type="radio"], input[type="checkbox"]{
 	margin-right: .5em;
@@ -487,9 +486,23 @@ input[type="radio"], input[type="checkbox"]{
 	width:100%;
 	flex-wrap:wrap;
 }
+.contact-container h2 {
+	text-indent: -.5em;
+}
 .contact-container label, .contact-container input{
 	display:block;
 
+}
+.contact-container label {
+	font-family: 'Avenir Heavy', sans-serif;
+	font-size: 1.03em;
+	margin-bottom: .3em;
+}
+.contact-container input {
+    margin-bottom: 1.25em;
+}
+.contact-input, .contact-container textarea {
+	margin-left: 1.25em;
 }
 .contact-input{
 	width: 70%;
@@ -538,13 +551,23 @@ input[type="radio"], input[type="checkbox"]{
 
 /* Talia's experimental tweaks */
 
+.ht-main-navigation li:hover > a, .page-template-home-template .ht-main-navigation li:hover > a, .home.blog .ht-main-navigation li:hover > a, .ht-main-navigation .current_page_item > a, .ht-main-navigation .current-menu-item > a, .ht-main-navigation .current_page_ancestor > a, .page-template-home-template .ht-main-navigation .current > a, .home.blog .ht-main-navigation .current > a {
+    background: #EAEAEA !important;
+    color: #7D4199;
+}
+
 .ht_no_sidebar_condensed #primary {
 	width: 85%;
 }
 
+.ht-main-header {
+	background: #EAEAEA;
+	padding: 2em 0;
+	text-align: center;
+}	
+
 h2, h3, h4, h5, h6 {
 	margin: 1em 0 .85em 0;
-	border-bottom: 3px #6c207e solid;
 }
 
 h3 {
@@ -563,6 +586,7 @@ h5, h6 {
 	text-align: center;
 	/*border-top: 3px #EAEAEA solid;*/
 	padding: .25em;
+	border-bottom: 3px #6c207e solid;
 }
 
 section {
