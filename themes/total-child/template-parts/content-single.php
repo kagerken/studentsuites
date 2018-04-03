@@ -6,20 +6,23 @@
  */
 
 ?>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-		<div class="grid-row m-padding-vertical">
-			<div class="project-photo-container s-padding-horizontal">
+		<div class="project-grid-row m-v-padding m-b-margin">
+			<div class="project-photo-container s-h-padding s-b-margin">
 				<?php the_post_thumbnail('total-blog-header'); // I need to define a custom one in our theme functions
 				?>
 			</div>
-			<div class="project-information-container s-padding-horizontal">
-				<div><span class="xs-r-margin bolded">Date Completed:</span><?php the_field('date_completed');?></div>
-				<div><span class="xs-r-margin bolded">Total Cost:</span>$<?php the_field('project_cost');?></div>
-				<div><span class="xs-r-margin bolded"># of Beds:</span><?php the_field('project_beds');?></div>
-				<div><span class="xs-r-margin bolded">Per Bed Cost:</span>$<?php the_field('per_bed_cost');?></div>
-				<div><span class="xs-r-margin bolded">Per Square Foot:</span>$<?php the_field('square_footage_cost');?></div>
-				<div><a href="<?php the_field('file_attachements') ?>" target="_blank">Download Project Case Study</a></div>
+			<div class="project-information-container s-h-padding s-b-margin">
+				<ul>
+					<li><span class="xs-r-margin bolded">Date Completed:</span><?php the_field('date_completed');?></li>
+					<li><span class="xs-r-margin bolded">Total Cost:</span>$<?php the_field('project_cost');?></li>
+					<li><span class="xs-r-margin bolded"># of Beds:</span><?php the_field('project_beds');?></li>
+					<li><span class="xs-r-margin bolded">Per Bed Cost:</span>$<?php the_field('per_bed_cost');?></li>
+					<li><span class="xs-r-margin bolded">Per Square Foot:</span>$<?php the_field('square_footage_cost');?></li>
+					<li><a href="<?php the_field('file_attachements') ?>" target="_blank">Download Project Case Study</a></li>
+				</ul>
 			</div>
 			
 		</div>

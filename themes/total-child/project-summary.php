@@ -25,7 +25,7 @@
 
 			<?php 
 
-			$total_image = wp_get_attachment_image_src( get_post_thumbnail_id() , 'total-blog-header' );
+			$total_image = wp_get_attachment_image_src( get_post_thumbnail_id() , 'total-portfolio-thumb' );
 
 			?>
 
