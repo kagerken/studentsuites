@@ -1,4 +1,4 @@
-<div class="ss-<?php<?strtolower(the_title());?>">
+<div class="ss-<?php strtolower(the_title());?>">
 	<h2><?php the_title() ?></h2>
 	<?php the_content(); ?>
 </div>
