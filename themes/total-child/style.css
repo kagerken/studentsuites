@@ -8,10 +8,6 @@ Template: total
 Version: 1.0.0
 */
 
-/*.ht-site-title a {
-    font-style: italic;
-}*/
-
 body, button, input, select, textarea {
 	font-family: 'Avenir Light', sans-serif;
 }
@@ -30,7 +26,11 @@ h1, h2, h3, h4, h5, h6, .ht-site-title, .ht-post-info, .ht-main-navigation a {
 	src: url('fonts/Avenir Heavy.ttf');
 }
 
-/* Heading Adjust ----------------------------- */
+/*
+---------------------------------------
+	Heading Adjust
+---------------------------------------
+*/
 /* adjust the height of the sticky header, give more whitespace to the element */
 .ht-sticky#ht-masthead{
 	height: 82px;
@@ -44,11 +44,18 @@ h1, h2, h3, h4, h5, h6, .ht-site-title, .ht-post-info, .ht-main-navigation a {
 }
 
 
-/* End Heading Adjust ------------------------- */
+/*
+---------------------------------------
+	End Heading Adjust
+---------------------------------------
+*/
 
 
-
-/* Typography Helpers ------------------------- */
+/*
+---------------------------------------
+	Typography | Text Helpers
+---------------------------------------
+*/
 
 blockquote, q{
 	border-left: 5px solid #67C7C5;
@@ -72,9 +79,17 @@ blockquote, q{
 	text-transform: lowercase;
 }
 
-/* End Typography -------------------------------- */
+/*
+---------------------------------------
+	End Typography
+---------------------------------------
+*/
 
-/* Grid Containers ----------------------------------*/
+/*
+---------------------------------------
+	Grid Containers
+---------------------------------------
+*/
 
 .grid-container{
 	margin: .5em initial;
@@ -124,20 +139,36 @@ blockquote, q{
 	width: 75%;
 }
 
-/* End Grid -------------------------------------- */
+/*
+---------------------------------------
+	End Grid
+---------------------------------------
+*/
 
 
 
 
-/* Container Types ------------------------------- */
+/*
+---------------------------------------
+	Container Types
+---------------------------------------
+*/
 .relative{
 	position: relative;
 	display: block;
 }
 
-/* End Container Types --------------------------- */
+/*
+---------------------------------------
+	End Container Types
+---------------------------------------
+*/
 
-/* Element Spacing ------------------------------- */
+/*
+---------------------------------------
+	Element Spacing
+---------------------------------------
+*/
 
 /* vertical padding */
 .l-v-padding{
@@ -318,11 +349,19 @@ blockquote, q{
 
 
 
-/* End Element Spacing --------------------------- */
+/*
+---------------------------------------
+	End Elements Spacing
+---------------------------------------
+*/
 
 
 
-/* Colors ---------------------------------------- */
+/*
+---------------------------------------
+	Colors
+---------------------------------------
+*/
 
 .black{
 	background-color: #000000;
@@ -358,15 +397,32 @@ blockquote, q{
 	background-color: #FFF9C3;
 }
 
-/* End Colors ------------------------------------ */
-/* Back to Top ----------------------------------- */
+/*
+---------------------------------------
+	End Colors
+---------------------------------------
+*/
+
+/*
+---------------------------------------
+	Back To Top
+---------------------------------------
+*/
 #ht-back-top{
 	background-color: #191919;
 }
 
-/* End Back to Top */
+/*
+---------------------------------------
+	End Back To Top
+---------------------------------------
+*/
 
-/* Form Fields ----------------------------------- */
+/*
+---------------------------------------
+	Form Fields
+---------------------------------------
+*/
 input[type="text"], input[type="email"], input[type="url"], input[type="password"],
 input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"],
 input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"],
@@ -389,9 +445,17 @@ input[type="radio"], input[type="checkbox"]{
 	margin-right: .5em;
 }
 
-/* End Form Fields -------------------------------- */
+/*
+---------------------------------------
+	End Form Fields
+---------------------------------------
+*/
 
-/* Style Guide Styling ---------------------------- */
+/*
+---------------------------------------
+	Style Guide
+---------------------------------------
+*/
 .ss-style-guide-heading-container{
 	position:relative;
 	border-bottom: 3px solid #9370B1;
@@ -456,8 +520,89 @@ input[type="radio"], input[type="checkbox"]{
 .ss-style-guide-color{
 	display:block;
 }
+/*
+---------------------------------------
+	End Style Guide
+---------------------------------------
+*/
 
-/*----announcements page--------------*/
+
+/*
+---------------------------------------
+	Home Page
+---------------------------------------
+*/
+#centerBloc{
+
+        margin: 1% 15%;
+
+        padding: 3%;
+
+        border-bottom: 3px solid black;
+
+    }
+
+    .infoGraphic{
+
+        
+
+        width: 450px;
+
+        height: 450px;
+
+        border: 1px solid black;
+
+        /*background-image: url(images/InfographicExample.jpg) no-repeat;*/
+
+    }
+
+    #centerRight{
+
+        height: 450px;
+
+        width: 60%;
+
+    }
+    .ss-center-right{
+		position: relative;	
+		display:flex;
+		align-items: center;
+    }
+    #bottom{
+		width: 60%;
+		margin: 1.5em auto;
+		display:flex;
+		flex-direction:row;
+		flex-wrap:wrap;
+		justify-content: space-around;
+    }
+
+	.ss-section-container{
+		width: 95%;
+		margin: 0 auto;
+	}
+
+
+	.ss-container{
+		display:flex;
+		flex-direction: row;
+		flex-wrap:wrap;
+	}
+	.ss-container > div{
+		width: 100%;
+	}
+
+/*
+---------------------------------------
+	End Home Page
+---------------------------------------
+*/
+
+/*
+---------------------------------------
+	Announcements
+---------------------------------------
+*/
 
 /*.ht-month-year{
     display: none;
@@ -465,12 +610,19 @@ input[type="radio"], input[type="checkbox"]{
 .ht-post-info .entry-date{
     display: none;
 }
+/*
+---------------------------------------
+	End Announcements
+---------------------------------------
+*/
 
 
 
-
-/* End Style Guide Styling ------------------------ */
-/* Contact Us Page --------------------------- */
+/*
+---------------------------------------
+	Contact Us Page
+---------------------------------------
+*/
 .container input[type="submit"], .container input[type="reset"]{
 	display: inline-block;
 
@@ -609,6 +761,31 @@ li {
 		width:100%;
 		flex-wrap:nowrap;
 	}
+	
+	/*
+	----------------------------
+		Home Page
+	----------------------------
+	*/
+	.ss-container{
+			flex-wrap:nowrap;
+		}
+		.ss-section-container{
+			width: 80%;
+		}
+		.ss-container .infographic{
+			width: 40%;
+		}
+		.ss-container .ss-center-right{
+			width: 60%;
+
+		}
+	/*
+	----------------------------
+		End Home Page
+	----------------------------
+	*/
+
 
 	/*
 	----------------------------
@@ -619,4 +796,3 @@ li {
 		flex-wrap:nowrap;
 	}
 }
-
