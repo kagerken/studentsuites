@@ -13,20 +13,23 @@ Version: 1.0.0
 }*/
 
 body, button, input, select, textarea {
-	font-family: 'Avenir Light', sans-serif;
+	font-family: 'Avenir', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, .ht-site-title, .ht-post-info, .ht-main-navigation a {
-	font-family: 'Avenir Heavy', sans-serif;
+	font-family: 'Avenir', sans-serif;
+	font-weight: bold;
 }
 
 @font-face {
-	font-family: 'Avenir Light';
+	font-family: 'Avenir';
+	font-weight: normal;
 	src: url('fonts/Avenir Light.otf');
 }
 
 @font-face {
-	font-family: 'Avenir Heavy';
+	font-family: 'Avenir';
+	font-weight: bold;
 	src: url('fonts/Avenir Heavy.ttf');
 }
 
@@ -57,7 +60,7 @@ blockquote, q{
 
 .entry-content a{
 /* style for links within the content blocks */
-	font-weight: 600;
+	font-weight: bold;
 }
 .bolded{
 	font-weight:bold;
@@ -468,7 +471,7 @@ input[type="radio"], input[type="checkbox"]{
 
 }
 .contact-container label {
-	font-family: 'Avenir Heavy', sans-serif;
+	font-weight: bold;
 	font-size: 1.03em;
 	margin-bottom: .3em;
 }
