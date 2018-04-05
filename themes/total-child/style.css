@@ -577,6 +577,18 @@ li {
     margin-bottom: .25em;
 }
 
+.entry-content ul li {
+	list-style-type: none;
+	position: relative;
+}
+
+.entry-content ul li::before {
+	content: '\2b9a \a0';
+	color: #6C207E;
+	position: absolute;
+	left: -1.1em;
+}
+
 /* Talia's experimental tweaks end */
 
 @media screen and (min-width: 1200px) {
