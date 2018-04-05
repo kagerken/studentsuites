@@ -12,6 +12,10 @@ Version: 1.0.0
     font-style: italic;
 }*/
 
+.ht-main-title {
+	font-weight: bold;
+}
+
 body, button, input, select, textarea {
 	font-family: 'Avenir', sans-serif;
 }
@@ -60,7 +64,10 @@ blockquote, q{
 
 .entry-content a{
 /* style for links within the content blocks */
-	font-weight: bold;
+	/*font-weight: bold;*/
+}
+.entry-content a:hover {
+	text-decoration: underline;
 }
 .bolded{
 	font-weight:bold;
