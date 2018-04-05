@@ -2,80 +2,62 @@
 
 /**
 
- * Template Name: SS Containers Home Page
+ * Template Name: SS Containers About Us Page
 
  *
 
- * @package total-child
+ * @package Total-Child
 
  */
 ?>
 
-<?php
-get_header();
-get_template_part('template-parts/section', 'slider');
-wp_reset_postdata();
+<?php get_header(); ?>
 
-/* pulling specific posts out to dispay content, sorry */
-$args = array(
-			'p'=>388,
-		);
-$ss = new WP_Query($args);
-?>
+<header class="ht-main-header">
+	<div class="ht-container">
+		<?php the_title( '<h1 class="ht-main-title">', '</h1>' ); ?>
+	</div>
+</header><!-- .entry-header -->
 
-<?php if( $ss->have_posts() ): ?>
-	<?php while($ss->have_posts() ) : $ss->the_post();?>
-		<div id="centerblock">
-        	<?php the_content();?>
-		</div>
-	<?php 
-		endwhile;
-		wp_reset_postdata();
-	?>
-<?php endif; ?>
+<div class="ht-container">
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main">
+		
+			<?php
+			$args = array('category_name' => 'ss-about-us','order'=>'ASC','orderby'=>'ID');
+			$query = new WP_Query($args);
+			if( $query->have_posts() ):
+			?>
+				<?php while( $query->have_posts()) : $query->the_post(); ?>
+					<?php get_template_part('template-parts/content', 'text'); ?>
+					
+				<?php 
+				endwhile;
+				wp_reset_postdata();
+				?>
+			<?php endif; ?>
+					<?php
+					$args = array('category_name' => 'leadership','order'=>'ASC','orderby'=>'ID');
+					$query = new WP_Query($args);
+					if( $query->have_posts() ):
+					?>
+				<h2>Meet the Leadership</h2>
+				<div class="grid-container">
+					<div class="grid-row">
+						<?php while( $query->have_posts()) : $query->the_post(); ?>
+							<?php get_template_part('template-parts/content', 'leadership'); ?>
+							
+						<?php 
+						endwhile;
+						wp_reset_postdata();
+						?>
+					<?php endif; ?>
+					</div>
+				</div>
+		</main><!-- #main -->
+	</div><!-- #primary -->
 
-<?php
-$args = array(
-			'p'=>390,
-		);
-$ss = new WP_Query($args);
-if( $ss->have_posts() ):
-?>
-	<?php while( $ss->have_posts() ) : $ss->the_post(); ?>
-		<div class="ss-section-container">
-			<div class="homeHeading l-h-padding">
-				<h1><?php the_title(); ?></h1>
-			</div>
-		<div class="ss-container">
-			<div class="infographic m-b-margin l-h-padding">
-				<?php the_post_thumbnail( 'total-portfolio-thumb' ); ?>
-			</div>
-			<div class="ss-center-right m-b-margin l-h-padding">
-				<?php the_content() ?>
-			</div>
-		</div>
-	<?php 
-		endwhile;
-		wp_reset_postdata();
-	?>
-<?php endif; ?>
-
-
-
-    <div id="bottom">
-
-        <button class="ss-call-to-action"><a href="#" title="">Call To Action</a></button>
-
-        <button class="ss-call-to-action"><a href="#" title="">Call To Action</a></button>
-
-        <button class="ss-call-to-action"><a href="#" title="">Call To Action</a></button>
-
-        <button class="ss-call-to-action"><a href="#" title="">Call To Action</a></button>
-
-        
-
-    </div>
-
-
+<?php get_sidebar(); ?>
+</div>
 
 <?php get_footer(); ?>

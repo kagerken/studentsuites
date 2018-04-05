@@ -33,22 +33,18 @@ get_header();
 
 				<div>										
 						<h2>Our Information</h2>
-						<div>
-								<h3>Mailing Address</h3>
-								<div>Student Suites, Inc.</div>
-								<div>4041 NE Lakewood Way, Suite 280</div>
-								<div>Lee's Summit, MO 64064</div>
-						</div>
-						<div>
-								<h3>Phone Number</h3>
-								<div>(816) 228-3040</div>
+						<?php
+						$args = array('category_name'=>'contact-information','order'=>'ASC','orderby'=>'ID');
+						$query = new WP_Query($args);
+						if( $query->have_posts() ):
+						?>
 
-						</div>
-						<div>
-								<h3>Fax Number</h3>
-								<div>(816) 228-4442</div>
-
-						</div>
+							<?php while($query->have_posts()) : $query->the_post() ?>
+								<?php get_template_part('template-parts/content', 'text'); ?>
+							<?php 	endwhile; 
+									wp_reset_postdata();
+							?>
+						<?php endif; ?>
 				</div>
 			</div>
 		</main>
