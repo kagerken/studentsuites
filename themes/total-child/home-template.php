@@ -1,5 +1,6 @@
 <?php
 
+
 /**
 
  * Template Name: SS Containers Home Page
@@ -75,6 +76,5 @@ wp_reset_postdata();
 		</main>
 	</div>
 </div>
-
 
 <?php get_footer(); ?>
