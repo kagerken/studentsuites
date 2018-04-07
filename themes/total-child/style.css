@@ -12,7 +12,7 @@ body, button, input, select, textarea {
   font-family: 'Avenir', sans-serif; 
 } 
 
-h1, h2, h3, h4, h5, h6, .ht-site-title, .ht-post-info, .ht-main-navigation a { 
+h1, h2, h3, h4, h5, h6, .ht-site-title, .ht-main-title, .ht-post-info, .ht-main-navigation a { 
   font-family: 'Avenir', sans-serif; 
   font-weight: bold; 
 } 
