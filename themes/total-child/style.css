@@ -8,50 +8,69 @@ Template: total
 Version: 1.0.0
 */
 
-/*.ht-site-title a {
-    font-style: italic;
-}*/
+body, button, input, select, textarea {  
+  font-family: 'Avenir', sans-serif; 
+} 
 
-/*comment bitches*/
+h1, h2, h3, h4, h5, h6, .ht-site-title, .ht-main-title, .ht-post-info, .ht-main-navigation a { 
+  font-family: 'Avenir', sans-serif; 
+  font-weight: bold; 
+} 
 
-body, button, input, select, textarea {
-	font-family: 'Avenir Light', sans-serif;
-}
+@font-face { 
+  font-family: 'Avenir'; 
+  font-weight: normal; 
+  src: url('fonts/Avenir Light.otf'); 
+} 
 
-h1, h2, h3, h4, h5, h6, .ht-site-title, .ht-post-info, .ht-main-navigation a {
-	font-family: 'Avenir Heavy', sans-serif;
-}
+@font-face { 
+  font-family: 'Avenir'; 
+  font-weight: bold; 
+  src: url('fonts/Avenir Heavy.ttf'); 
+} 
 
-@font-face {
-	font-family: 'Avenir Light';
-	src: url('fonts/Avenir Light.otf');
-}
-
-@font-face {
-	font-family: 'Avenir Heavy';
-	src: url('fonts/Avenir Heavy.ttf');
-}
-
-/* Heading Adjust ----------------------------- */
+/*
+---------------------------------------
+	Heading Adjust
+---------------------------------------
+*/
 /* adjust the height of the sticky header, give more whitespace to the element */
 .ht-sticky#ht-masthead{
 	height: 82px;
 }
 
-/* End Heading Adjust ------------------------- */
+ 
+#ht-site-branding img {
+    max-height: 75px;
+    position: relative;
+    bottom: 10px;
+}
 
 
+/*
+---------------------------------------
+	End Heading Adjust
+---------------------------------------
+*/
 
-/* Typography Helpers ------------------------- */
+
+/*
+---------------------------------------
+	Typography | Text Helpers
+---------------------------------------
+*/
 
 blockquote, q{
 	border-left: 5px solid #67C7C5;
 	padding-left: 15px;
 }
 
-.entry-content a{
+.entry-content a {
 /* style for links within the content blocks */
-	font-weight: 600;
+	/*font-weight: bold;*/
+}
+.entry-content a:hover {
+	text-decoration: underline;
 }
 .bolded{
 	font-weight:bold;
@@ -66,9 +85,17 @@ blockquote, q{
 	text-transform: lowercase;
 }
 
-/* End Typography -------------------------------- */
+/*
+---------------------------------------
+	End Typography
+---------------------------------------
+*/
 
-/* Grid Containers ----------------------------------*/
+/*
+---------------------------------------
+	Grid Containers
+---------------------------------------
+*/
 
 .grid-container{
 	margin: .5em initial;
@@ -94,6 +121,9 @@ blockquote, q{
 .grid-flex-none{
 	flex-wrap: nowrap;
 }
+.grid-flex-break{
+	flex-wrap:wrap;
+}
 .grid-item-1{
 	width: 100%;
 }
@@ -115,32 +145,48 @@ blockquote, q{
 	width: 75%;
 }
 
-/* End Grid -------------------------------------- */
+/*
+---------------------------------------
+	End Grid
+---------------------------------------
+*/
 
 
 
 
-/* Container Types ------------------------------- */
+/*
+---------------------------------------
+	Container Types
+---------------------------------------
+*/
 .relative{
 	position: relative;
 	display: block;
 }
 
-/* End Container Types --------------------------- */
+/*
+---------------------------------------
+	End Container Types
+---------------------------------------
+*/
 
-/* Element Spacing ------------------------------- */
+/*
+---------------------------------------
+	Element Spacing
+---------------------------------------
+*/
 
 /* vertical padding */
-.l-padding-vertical{
+.l-v-padding{
 	padding: 1.5em 0;
 }
-.m-padding-vertical{
+.m-v-padding{
 	padding: 1em 0;
 }
-.s-padding-vertical{
+.s-v-padding{
 	padding: .5em 0;
 }
-.xs-padding-vertical{
+.xs-v-padding{
 	padding: .25em 0;
 }
 .l-t-padding{
@@ -168,16 +214,16 @@ blockquote, q{
 	padding-bottom: .25em;
 }
 /* horizontal padding */
-.l-padding-horizontal{
+.l-h-padding{
 	padding: 0 1.5em;
 }
-.m-padding-horizontal{
+.m-h-padding{
 	padding: 0 1em;
 }
-.s-padding-horizontal{
+.s-h-padding{
 	padding: 0 .5em;
 }
-.xs-padding-horizontal{
+.xs-h-padding{
 	padding: 0 .25em;
 }
 .l-l-padding{
@@ -205,17 +251,43 @@ blockquote, q{
 	padding-right: .25em;
 }
 
+/* all padding */
+.l-a-padding{
+	padding: 1.5em;
+}
+.m-a-padding{
+	padding: 1em;
+}
+.s-a-padding{
+	padding: .5em;
+}
+.xs-a-padding{
+	padding: .25em;
+}
+/* all margin */
+.l-a-margin{
+	margin: 1.5em;
+}
+.m-a-margin{
+	margin: 1em;
+}
+.s-a-margin{
+	margin: .5em;
+}
+.xs-a-margin{
+	margin: .25em;
+}
 /* horizontal margin */
-.l-margin-horizontal{
+.l-h-margin{
 	margin: 0 1.5em;
 }
-.m-margin-horizontal{
+.m-h-margin{
 	margin: 0 1em;
 }
-.s-margin-horizontal{
+.s-h-margin{
 	margin: 0 .5em;
 }
-.xs-margin-horizontal{
+.xs-h-margin{
 	margin: 0 .25em;
 }
 .l-l-margin{
@@ -243,17 +315,17 @@ blockquote, q{
 	margin-right: .25em;
 }
 
-/* vertical margin */
-.l-margin-vertical{
+/* vertical margins */
+.l-v-margin{
 	margin: 1.5em 0;
 }
-.m-margin-vertical{
+.m-v-margin{
 	margin: 1em 0;
 }
-.s-margin-vertical{
+.s-v-margin{
 	margin: .5em 0;
 }
-.xs-margin-vertical{
+.xs-v-margin{
 	margin: .25em 0;
 }
 .l-b-margin{
@@ -283,11 +355,19 @@ blockquote, q{
 
 
 
-/* End Element Spacing --------------------------- */
+/*
+---------------------------------------
+	End Elements Spacing
+---------------------------------------
+*/
 
 
 
-/* Colors ---------------------------------------- */
+/*
+---------------------------------------
+	Colors
+---------------------------------------
+*/
 
 .black{
 	background-color: #000000;
@@ -323,41 +403,65 @@ blockquote, q{
 	background-color: #FFF9C3;
 }
 
-/* End Colors ------------------------------------ */
-/* Back to Top ----------------------------------- */
+/*
+---------------------------------------
+	End Colors
+---------------------------------------
+*/
+
+/*
+---------------------------------------
+	Back To Top
+---------------------------------------
+*/
 #ht-back-top{
 	background-color: #191919;
 }
 
-/* End Back to Top */
+/*
+---------------------------------------
+	End Back To Top
+---------------------------------------
+*/
 
-/* Form Fields ----------------------------------- */
+/*
+---------------------------------------
+	Form Fields
+---------------------------------------
+*/
 input[type="text"], input[type="email"], input[type="url"], input[type="password"],
 input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"],
 input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"],
 input[type="color"], textarea{
 	border: 1px solid #ADAFB1;
-	box-shadow: 2px 2px 1px #67C7C5;
 }
 input[type="text"]:hover, input[type="email"]:hover, input[type="url"]:hover, input[type="password"]:hover,
 input[type="search"]:hover, input[type="number"]:hover, input[type="tel"]:hover, input[type="range"]:hover, input[type="date"]:hover,
 input[type="month"]:hover, input[type="week"]:hover, input[type="time"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover,
 input[type="color"]:hover, textarea:hover{
-	border: 2px solid #7D4199;
+	box-shadow: 0 0 2px #6C207E;
 }
 input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus,
 input[type="search"]:focus, input[type="number"]:focus, input[type="tel"]:focus, input[type="range"]:focus, input[type="date"]:focus,
 input[type="month"]:focus, input[type="week"]:focus, input[type="time"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus,
 input[type="color"]:focus, textarea:focus{
-	border: 2px solid #7D4199;
+	box-shadow: 0 0 7px #6C207E;
 }
 input[type="radio"], input[type="checkbox"]{
 	margin-right: .5em;
 }
 
-/* End Form Fields -------------------------------- */
+/*
+---------------------------------------
+	End Form Fields
+---------------------------------------
+*/
 
-/* Style Guide Styling ---------------------------- */
+/*
+---------------------------------------
+	Style Guide
+---------------------------------------
+*/
 .ss-style-guide-heading-container{
 	position:relative;
 	border-bottom: 3px solid #9370B1;
@@ -422,15 +526,294 @@ input[type="radio"], input[type="checkbox"]{
 .ss-style-guide-color{
 	display:block;
 }
+/*
+---------------------------------------
+	End Style Guide
+---------------------------------------
+*/
 
-/* End Style Guide Styling ------------------------ */
 
-/*SlideShow styles*/
+/*
+---------------------------------------
+	Home Page
+---------------------------------------
+*/
+#centerblock{
+	border-bottom: 3px solid black;
+}
+#centerblock p{
+    width: 82%;
+	margin: 0 auto;
+}
+
+.infoGraphic{
+	width: 450px;
+	height: 450px;
+	border: 1px solid black;
+}
+
+#centerRight{
+	height: 450px;
+	width: 60%;
+}
+.ss-center-right{
+	position: relative;	
+	display:flex;
+	align-items: center;
+    }
+
+#bottom{
+	width: 60%;
+	margin: 1.5em auto;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content: space-around;
+}
+.ss-section-container{
+	width: 95%;
+	margin: 0 auto;
+}
+
+
+.ss-container{
+	display:flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+}
+.ss-container > div{
+	width: 100%;
+}
+
+/*
+---------------------------------------
+	End Home Page
+---------------------------------------
+*/
+
+/*
+---------------------------------------
+	Announcements
+---------------------------------------
+*/
+
+/*.ht-month-year{
+    display: none;
+}*/
+.ht-post-info .entry-date{
+    display: none;
+}
+/*
+---------------------------------------
+	End Announcements
+---------------------------------------
+*/
+
+
+
+/*
+---------------------------------------
+	Contact Us Page
+---------------------------------------
+*/
+.container input[type="submit"], .container input[type="reset"]{
+	display: inline-block;
+
+
+	margin-top:1em;
+}
+.contact-container{
+	display:flex;
+	flex-direction:column;
+	width:100%;
+}
+.contact-container > *{
+	width:100%;
+	flex-wrap:wrap;
+}
+.contact-container h2 {
+	text-indent: -.5em;
+}
+.contact-container label, .contact-container input{
+	display:block;
+
+}
+.contact-container label { 
+  font-weight: bold; 
+  font-size: 1.03em; 
+  margin-bottom: .3em; 
+} 
+.contact-container input {
+    margin-bottom: 1.25em;
+}
+.contact-input, .contact-container textarea {
+	margin-left: 1.25em;
+}
+.contact-input{
+	width: 70%;
+	max-width: 400px;
+}
+.contact-textarea{
+	width: 70%;
+	height: 150px;
+	max-width: 450px;
+}
+
+/* 
+	-----------------------------------------
+	Projects - Single
+	-----------------------------------------
+*/
+.project-grid-row{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+
+}
+.project-grid-row .project-photo-container{
+
+}
+.project-grid-row .project-information-container{
+
+/* 
+	-----------------------------------------
+	End Projects - Single
+	-----------------------------------------
+*/
+
+/* Talia's logo adjustments */
+
+#ht-site-branding img {
+    max-height: 75px;
+    position: relative;
+    bottom: 10px;
+}
+/* end Talia's logo adjustments */
+
+/* Talia's experimental tweaks */
+
+.ht-main-navigation a {
+	transition: background-color .25s;
+}
+
+.ht-main-navigation li:hover > a, .page-template-home-template .ht-main-navigation li:hover > a, .home.blog .ht-main-navigation li:hover > a, .ht-main-navigation .current_page_item > a, .ht-main-navigation .current-menu-item > a, .ht-main-navigation .current_page_ancestor > a, .page-template-home-template .ht-main-navigation .current > a, .home.blog .ht-main-navigation .current > a {
+    background: #EAEAEA !important;
+    color: #7D4199;
+	transition: background-color .25s;
+}
+
+.ht_no_sidebar_condensed #primary {
+	width: 85%;
+}
+
+.ht-main-header {
+	background: #EAEAEA;
+	padding: 2em 0;
+	text-align: center;
+}	
+
+h2, h3, h4, h5, h6 {
+	margin: 1em 0 .85em 0;
+}
+
+h3 {
+	border-width: 2px;
+}
+
+h4 {
+	border-width: 1px;
+}
+
+h5, h6 {
+	border-width: 0;
+}
+
+.centered-headings h1, .centered-headings h2, .centered-headings h3, .centered-headings h4, .centered-headings h5, .centered-headings h6 {
+	text-align: center;
+	/*border-top: 3px #EAEAEA solid;*/
+	padding: .25em;
+	border-bottom: 3px #6c207e solid;
+}
+
+section {
+	margin-top: .25em;
+	margin-bottom: .75em;
+}
+
+li {
+    margin-bottom: .25em;
+}
+
+.content-area ul li {
+	list-style-type: none;
+	position: relative;
+}
+
+.content-area ul li::before {
+	content: '\2b9a \a0';
+	color: #6C207E;
+	position: absolute;
+	left: -1.1em;
+}
+
+/* Talia's experimental tweaks end */
+
+@media screen and (min-width: 1200px) {
+	.contact-container{
+		display:flex;
+		flex-direction:row;
+	}
+	.contact-container > *{
+		width:100%;
+		flex-wrap:nowrap;
+	}
+	
+	/*
+	----------------------------
+		Home Page
+	----------------------------
+	*/
+	.ss-container{
+			flex-wrap:nowrap;
+		}
+		.ss-section-container{
+			width: 80%;
+		}
+		.ss-container .infographic{
+			width: 40%;
+		}
+		.ss-container .ss-center-right{
+			width: 60%;
+
+		}
+	/*
+	----------------------------
+		End Home Page
+	----------------------------
+	*/
+
+
+	/*
+	----------------------------
+		Projects
+	----------------------------
+	*/
+	.project-grid-row{
+		flex-wrap:nowrap;
+	}
+}
+
+
+/*SlideShow styles Jordan*/
 .ht-slide-cap-desc {
     background-color: #fff;
     color: purple;
     width: 50%;
     margin-left: 25%;
     padding: 0;
+}
+}
+h2.entry-title{
+	margin: 0;
 }
 
