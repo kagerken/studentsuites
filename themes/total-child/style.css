@@ -675,13 +675,6 @@ input[type="radio"], input[type="checkbox"]{
 }
 .project-grid-row .project-information-container{
 
-}
-h2.entry-title{
-	margin: 0;
-}
-
-
-
 /* 
 	-----------------------------------------
 	End Projects - Single
@@ -809,3 +802,18 @@ li {
 		flex-wrap:nowrap;
 	}
 }
+
+
+/*SlideShow styles Jordan*/
+.ht-slide-cap-desc {
+    background-color: #fff;
+    color: purple;
+    width: 50%;
+    margin-left: 25%;
+    padding: 0;
+}
+}
+h2.entry-title{
+	margin: 0;
+}
+
