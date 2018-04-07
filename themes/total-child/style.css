@@ -538,65 +538,52 @@ input[type="radio"], input[type="checkbox"]{
 	Home Page
 ---------------------------------------
 */
-#centerBloc{
+#centerblock{
+	border-bottom: 3px solid black;
+}
+#centerblock p{
+    width: 82%;
+	margin: 0 auto;
+}
 
-        margin: 1% 15%;
+.infoGraphic{
+	width: 450px;
+	height: 450px;
+	border: 1px solid black;
+}
 
-        padding: 3%;
-
-        border-bottom: 3px solid black;
-
+#centerRight{
+	height: 450px;
+	width: 60%;
+}
+.ss-center-right{
+	position: relative;	
+	display:flex;
+	align-items: center;
     }
 
-    .infoGraphic{
-
-        
-
-        width: 450px;
-
-        height: 450px;
-
-        border: 1px solid black;
-
-        /*background-image: url(images/InfographicExample.jpg) no-repeat;*/
-
-    }
-
-    #centerRight{
-
-        height: 450px;
-
-        width: 60%;
-
-    }
-    .ss-center-right{
-		position: relative;	
-		display:flex;
-		align-items: center;
-    }
-    #bottom{
-		width: 60%;
-		margin: 1.5em auto;
-		display:flex;
-		flex-direction:row;
-		flex-wrap:wrap;
-		justify-content: space-around;
-    }
-
-	.ss-section-container{
-		width: 95%;
-		margin: 0 auto;
-	}
+#bottom{
+	width: 60%;
+	margin: 1.5em auto;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content: space-around;
+}
+.ss-section-container{
+	width: 95%;
+	margin: 0 auto;
+}
 
 
-	.ss-container{
-		display:flex;
-		flex-direction: row;
-		flex-wrap:wrap;
-	}
-	.ss-container > div{
-		width: 100%;
-	}
+.ss-container{
+	display:flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+}
+.ss-container > div{
+	width: 100%;
+}
 
 /*
 ---------------------------------------
@@ -688,6 +675,9 @@ input[type="radio"], input[type="checkbox"]{
 }
 .project-grid-row .project-information-container{
 
+}
+h2.entry-title{
+	margin: 0;
 }
 
 

@@ -14,10 +14,10 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('total-hentry'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(array('total-hentry','grid-item-3','grid-item-2','grid-item-1')); ?>>
 
 
-	<div class="ht-post-wrapper">
+	<div class="m-h-padding">
 
 		<?php if(has_post_thumbnail()): ?>
 
