@@ -5,7 +5,7 @@
 
  * Template Name: SS Containers Home Page
 
- * adding comment
+ * adding comment - other comment
 
  * @package total-child
 
