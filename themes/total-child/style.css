@@ -29,19 +29,11 @@ h1, h2, h3, h4, h5, h6, .ht-site-title, .ht-post-info, .ht-main-navigation a {
   src: url('fonts/Avenir Heavy.ttf'); 
 } 
 
-@font-face {
-	font-family: 'Avenir';
-	font-weight: normal;
-	src: url('fonts/Avenir Light.otf');
-}
-
-@font-face {
-	font-family: 'Avenir';
-	font-weight: bold;
-	src: url('fonts/Avenir Heavy.ttf');
-}
-
-/* Heading Adjust ----------------------------- */
+/*
+---------------------------------------
+	Heading Adjust
+---------------------------------------
+*/
 /* adjust the height of the sticky header, give more whitespace to the element */
 .ht-sticky#ht-masthead{
 	height: 82px;
@@ -55,11 +47,18 @@ h1, h2, h3, h4, h5, h6, .ht-site-title, .ht-post-info, .ht-main-navigation a {
 }
 
 
-/* End Heading Adjust ------------------------- */
+/*
+---------------------------------------
+	End Heading Adjust
+---------------------------------------
+*/
 
 
-
-/* Typography Helpers ------------------------- */
+/*
+---------------------------------------
+	Typography | Text Helpers
+---------------------------------------
+*/
 
 blockquote, q{
 	border-left: 5px solid #67C7C5;
@@ -86,9 +85,17 @@ blockquote, q{
 	text-transform: lowercase;
 }
 
-/* End Typography -------------------------------- */
+/*
+---------------------------------------
+	End Typography
+---------------------------------------
+*/
 
-/* Grid Containers ----------------------------------*/
+/*
+---------------------------------------
+	Grid Containers
+---------------------------------------
+*/
 
 .grid-container{
 	margin: .5em initial;
@@ -138,32 +145,48 @@ blockquote, q{
 	width: 75%;
 }
 
-/* End Grid -------------------------------------- */
+/*
+---------------------------------------
+	End Grid
+---------------------------------------
+*/
 
 
 
 
-/* Container Types ------------------------------- */
+/*
+---------------------------------------
+	Container Types
+---------------------------------------
+*/
 .relative{
 	position: relative;
 	display: block;
 }
 
-/* End Container Types --------------------------- */
+/*
+---------------------------------------
+	End Container Types
+---------------------------------------
+*/
 
-/* Element Spacing ------------------------------- */
+/*
+---------------------------------------
+	Element Spacing
+---------------------------------------
+*/
 
 /* vertical padding */
-.l-padding-vertical{
+.l-v-padding{
 	padding: 1.5em 0;
 }
-.m-padding-vertical{
+.m-v-padding{
 	padding: 1em 0;
 }
-.s-padding-vertical{
+.s-v-padding{
 	padding: .5em 0;
 }
-.xs-padding-vertical{
+.xs-v-padding{
 	padding: .25em 0;
 }
 .l-t-padding{
@@ -191,16 +214,16 @@ blockquote, q{
 	padding-bottom: .25em;
 }
 /* horizontal padding */
-.l-padding-horizontal{
+.l-h-padding{
 	padding: 0 1.5em;
 }
-.m-padding-horizontal{
+.m-h-padding{
 	padding: 0 1em;
 }
-.s-padding-horizontal{
+.s-h-padding{
 	padding: 0 .5em;
 }
-.xs-padding-horizontal{
+.xs-h-padding{
 	padding: 0 .25em;
 }
 .l-l-padding{
@@ -228,17 +251,43 @@ blockquote, q{
 	padding-right: .25em;
 }
 
+/* all padding */
+.l-a-padding{
+	padding: 1.5em;
+}
+.m-a-padding{
+	padding: 1em;
+}
+.s-a-padding{
+	padding: .5em;
+}
+.xs-a-padding{
+	padding: .25em;
+}
+/* all margin */
+.l-a-margin{
+	margin: 1.5em;
+}
+.m-a-margin{
+	margin: 1em;
+}
+.s-a-margin{
+	margin: .5em;
+}
+.xs-a-margin{
+	margin: .25em;
+}
 /* horizontal margin */
-.l-margin-horizontal{
+.l-h-margin{
 	margin: 0 1.5em;
 }
-.m-margin-horizontal{
+.m-h-margin{
 	margin: 0 1em;
 }
-.s-margin-horizontal{
+.s-h-margin{
 	margin: 0 .5em;
 }
-.xs-margin-horizontal{
+.xs-h-margin{
 	margin: 0 .25em;
 }
 .l-l-margin{
@@ -266,17 +315,17 @@ blockquote, q{
 	margin-right: .25em;
 }
 
-/* vertical margin */
-.l-margin-vertical{
+/* vertical margins */
+.l-v-margin{
 	margin: 1.5em 0;
 }
-.m-margin-vertical{
+.m-v-margin{
 	margin: 1em 0;
 }
-.s-margin-vertical{
+.s-v-margin{
 	margin: .5em 0;
 }
-.xs-margin-vertical{
+.xs-v-margin{
 	margin: .25em 0;
 }
 .l-b-margin{
@@ -306,11 +355,19 @@ blockquote, q{
 
 
 
-/* End Element Spacing --------------------------- */
+/*
+---------------------------------------
+	End Elements Spacing
+---------------------------------------
+*/
 
 
 
-/* Colors ---------------------------------------- */
+/*
+---------------------------------------
+	Colors
+---------------------------------------
+*/
 
 .black{
 	background-color: #000000;
@@ -346,15 +403,32 @@ blockquote, q{
 	background-color: #FFF9C3;
 }
 
-/* End Colors ------------------------------------ */
-/* Back to Top ----------------------------------- */
+/*
+---------------------------------------
+	End Colors
+---------------------------------------
+*/
+
+/*
+---------------------------------------
+	Back To Top
+---------------------------------------
+*/
 #ht-back-top{
 	background-color: #191919;
 }
 
-/* End Back to Top */
+/*
+---------------------------------------
+	End Back To Top
+---------------------------------------
+*/
 
-/* Form Fields ----------------------------------- */
+/*
+---------------------------------------
+	Form Fields
+---------------------------------------
+*/
 input[type="text"], input[type="email"], input[type="url"], input[type="password"],
 input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"],
 input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"],
@@ -377,9 +451,17 @@ input[type="radio"], input[type="checkbox"]{
 	margin-right: .5em;
 }
 
-/* End Form Fields -------------------------------- */
+/*
+---------------------------------------
+	End Form Fields
+---------------------------------------
+*/
 
-/* Style Guide Styling ---------------------------- */
+/*
+---------------------------------------
+	Style Guide
+---------------------------------------
+*/
 .ss-style-guide-heading-container{
 	position:relative;
 	border-bottom: 3px solid #9370B1;
@@ -444,8 +526,89 @@ input[type="radio"], input[type="checkbox"]{
 .ss-style-guide-color{
 	display:block;
 }
+/*
+---------------------------------------
+	End Style Guide
+---------------------------------------
+*/
 
-/*----announcements page--------------*/
+
+/*
+---------------------------------------
+	Home Page
+---------------------------------------
+*/
+#centerBloc{
+
+        margin: 1% 15%;
+
+        padding: 3%;
+
+        border-bottom: 3px solid black;
+
+    }
+
+    .infoGraphic{
+
+        
+
+        width: 450px;
+
+        height: 450px;
+
+        border: 1px solid black;
+
+        /*background-image: url(images/InfographicExample.jpg) no-repeat;*/
+
+    }
+
+    #centerRight{
+
+        height: 450px;
+
+        width: 60%;
+
+    }
+    .ss-center-right{
+		position: relative;	
+		display:flex;
+		align-items: center;
+    }
+    #bottom{
+		width: 60%;
+		margin: 1.5em auto;
+		display:flex;
+		flex-direction:row;
+		flex-wrap:wrap;
+		justify-content: space-around;
+    }
+
+	.ss-section-container{
+		width: 95%;
+		margin: 0 auto;
+	}
+
+
+	.ss-container{
+		display:flex;
+		flex-direction: row;
+		flex-wrap:wrap;
+	}
+	.ss-container > div{
+		width: 100%;
+	}
+
+/*
+---------------------------------------
+	End Home Page
+---------------------------------------
+*/
+
+/*
+---------------------------------------
+	Announcements
+---------------------------------------
+*/
 
 /*.ht-month-year{
     display: none;
@@ -453,12 +616,19 @@ input[type="radio"], input[type="checkbox"]{
 .ht-post-info .entry-date{
     display: none;
 }
+/*
+---------------------------------------
+	End Announcements
+---------------------------------------
+*/
 
 
 
-
-/* End Style Guide Styling ------------------------ */
-/* Contact Us Page --------------------------- */
+/*
+---------------------------------------
+	Contact Us Page
+---------------------------------------
+*/
 .container input[type="submit"], .container input[type="reset"]{
 	display: inline-block;
 
@@ -507,8 +677,18 @@ input[type="radio"], input[type="checkbox"]{
 	Projects - Single
 	-----------------------------------------
 */
+.project-grid-row{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
 
+}
+.project-grid-row .project-photo-container{
 
+}
+.project-grid-row .project-information-container{
+
+}
 
 
 
@@ -604,5 +784,38 @@ li {
 		width:100%;
 		flex-wrap:nowrap;
 	}
-}
+	
+	/*
+	----------------------------
+		Home Page
+	----------------------------
+	*/
+	.ss-container{
+			flex-wrap:nowrap;
+		}
+		.ss-section-container{
+			width: 80%;
+		}
+		.ss-container .infographic{
+			width: 40%;
+		}
+		.ss-container .ss-center-right{
+			width: 60%;
 
+		}
+	/*
+	----------------------------
+		End Home Page
+	----------------------------
+	*/
+
+
+	/*
+	----------------------------
+		Projects
+	----------------------------
+	*/
+	.project-grid-row{
+		flex-wrap:nowrap;
+	}
+}
