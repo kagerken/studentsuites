@@ -8,23 +8,26 @@ Template: total
 Version: 1.0.0
 */
 
-body, button, input, select, textarea {
-	font-family: 'Avenir Light', sans-serif;
-}
+body, button, input, select, textarea {  
+  font-family: 'Avenir', sans-serif; 
+} 
 
-h1, h2, h3, h4, h5, h6, .ht-site-title, .ht-post-info, .ht-main-navigation a {
-	font-family: 'Avenir Heavy', sans-serif;
-}
+h1, h2, h3, h4, h5, h6, .ht-site-title, .ht-post-info, .ht-main-navigation a { 
+  font-family: 'Avenir', sans-serif; 
+  font-weight: bold; 
+} 
 
-@font-face {
-	font-family: 'Avenir Light';
-	src: url('fonts/Avenir Light.otf');
-}
+@font-face { 
+  font-family: 'Avenir'; 
+  font-weight: normal; 
+  src: url('fonts/Avenir Light.otf'); 
+} 
 
-@font-face {
-	font-family: 'Avenir Heavy';
-	src: url('fonts/Avenir Heavy.ttf');
-}
+@font-face { 
+  font-family: 'Avenir'; 
+  font-weight: bold; 
+  src: url('fonts/Avenir Heavy.ttf'); 
+} 
 
 /*
 ---------------------------------------
@@ -645,11 +648,11 @@ input[type="radio"], input[type="checkbox"]{
 	display:block;
 
 }
-.contact-container label {
-	font-family: 'Avenir Heavy', sans-serif;
-	font-size: 1.03em;
-	margin-bottom: .3em;
-}
+.contact-container label { 
+  font-weight: bold; 
+  font-size: 1.03em; 
+  margin-bottom: .3em; 
+} 
 .contact-container input {
     margin-bottom: 1.25em;
 }
