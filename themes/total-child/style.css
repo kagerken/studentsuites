@@ -425,5 +425,12 @@ input[type="radio"], input[type="checkbox"]{
 
 /* End Style Guide Styling ------------------------ */
 
-
+/*SlideShow styles*/
+.ht-slide-cap-desc {
+    background-color: #fff;
+    color: purple;
+    width: 50%;
+    margin-left: 25%;
+    padding: 0;
+}
 
