@@ -17,6 +17,16 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+    <!-- Global site tag (gtag.js) - Google Analytics added by J.Luna 06Apr2018-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117139437-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-117139437-1');
+    </script>
+
 <div id="ht-page">
 	<header id="ht-masthead" class="ht-site-header">
 		<div class="ht-container ht-clearfix">
