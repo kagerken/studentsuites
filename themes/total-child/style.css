@@ -825,4 +825,12 @@ li {
 h2.entry-title{
 	margin: 0;
 }
+/* end SlideShow styles Jordan */
 
+/* Talia slideshow resize */
+
+.ht-slide {
+	max-height: 90vh;
+}
+
+/* end Talia slideshow resize */
