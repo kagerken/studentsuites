@@ -758,6 +758,8 @@ li {
 
 /* Talia's experimental tweaks end */
 
+/* media queries */
+
 @media screen and (min-width: 1200px) {
 	.contact-container{
 		display:flex;
@@ -803,6 +805,13 @@ li {
 	}
 }
 
+@media screen and (max-width: 768px) {
+	.grid-row {
+		display: block;
+	}
+}
+
+/* media queries end */
 
 /*SlideShow styles Jordan*/
 .ht-slide-cap-desc {
