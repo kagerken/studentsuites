@@ -97,6 +97,11 @@ blockquote, q{
 ---------------------------------------
 */
 
+/* Ordering */
+.rightimg{
+	order: 1;
+}
+/* End ordering */
 .grid-container{
 	margin: .5em initial;
 }
@@ -143,6 +148,11 @@ blockquote, q{
 }
 .grid-item-75{
 	width: 75%;
+}
+
+/* collapsing grids */
+.coll-grid-item-3{
+	width:100%;
 }
 
 /*
@@ -571,7 +581,6 @@ input[type="radio"], input[type="checkbox"]{
 	justify-content: space-around;
 }
 .ss-section-container{
-	width: 95%;
 	margin: 0 auto;
 }
 
@@ -674,7 +683,7 @@ input[type="radio"], input[type="checkbox"]{
 
 }
 .project-grid-row .project-information-container{
-
+}
 /* 
 	-----------------------------------------
 	End Projects - Single
@@ -757,7 +766,17 @@ li {
 }
 
 /* Talia's experimental tweaks end */
-
+@media screen and (min-width: 720px){
+	.coll-grid-item-3{
+		width:50%;
+	}
+	.grid-flex-break{
+		flex-wrap: nowrap;
+	}
+	.rightimg{
+		order:2;
+	}
+}
 @media screen and (min-width: 1200px) {
 	.contact-container{
 		display:flex;
@@ -773,11 +792,11 @@ li {
 		Home Page
 	----------------------------
 	*/
-	.ss-container{
-			flex-wrap:nowrap;
+		.ss-container{
+			flex-wrap: nowrap;
 		}
 		.ss-section-container{
-			width: 80%;
+			/*width: 80%;*/
 		}
 		.ss-container .infographic{
 			width: 40%;
@@ -801,6 +820,9 @@ li {
 	.project-grid-row{
 		flex-wrap:nowrap;
 	}
+	.coll-grid-item-3{
+		width:33.33%;
+	}
 }
 
 
@@ -812,7 +834,7 @@ li {
     margin-left: 25%;
     padding: 0;
 }
-}
+
 h2.entry-title{
 	margin: 0;
 }
