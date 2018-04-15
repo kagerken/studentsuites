@@ -625,6 +625,9 @@ input[type="radio"], input[type="checkbox"]{
 	Contact Us Page
 ---------------------------------------
 */
+.ss-information{
+	margin-left:.5em;
+}
 .container input[type="submit"], .container input[type="reset"]{
 	display: inline-block;
 
@@ -635,6 +638,7 @@ input[type="radio"], input[type="checkbox"]{
 	display:flex;
 	flex-direction:column;
 	width:100%;
+	margin: auto 5%;
 }
 .contact-container > *{
 	width:100%;

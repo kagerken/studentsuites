@@ -31,8 +31,7 @@ get_header();
 					</div>
 				</form>
 
-				<div>										
-						<h2>Our Information</h2>
+				<div class="ss-information">										
 						<?php
 						$args = array('category_name'=>'contact-information','order'=>'ASC','orderby'=>'ID');
 						$query = new WP_Query($args);
