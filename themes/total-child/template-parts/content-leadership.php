@@ -10,7 +10,7 @@
  */
 ?>
 
-<div class="grid-item-1">
-	<a href="#"><?php the_post_thumbnail() ?></a>
+<div class="grid-item-1 m-v-padding l-h-padding">
+	<div class="m-b-margin"><?php the_post_thumbnail() ?></div>
 	<?php the_content(); ?>
 </div>
