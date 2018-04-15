@@ -766,7 +766,7 @@ li {
 }
 
 /* Talia's experimental tweaks end */
-@media screen and (min-width: 720px){
+@media screen and (min-width: 768px){
 	.coll-grid-item-3{
 		width:50%;
 	}
@@ -827,12 +827,18 @@ li {
 
 
 /*SlideShow styles Jordan*/
+.ht-slide-cap-title{
+	margin-bottom: 2px;
+}
 .ht-slide-cap-desc {
-    background-color: #fff;
-    color: purple;
-    width: 50%;
-    margin-left: 25%;
+    width: 35%;
     padding: 0;
+	margin: 0 auto;
+}
+.ht-slide-cap-desc-text{
+	color: #6C207E;
+	background-color: #EAEAEA;
+	padding: .25em 1em;
 }
 
 h2.entry-title{
