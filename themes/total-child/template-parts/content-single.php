@@ -4,7 +4,6 @@
  *
  * @package Total-Child
  */
-
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -15,6 +14,8 @@
 				?>
 			</div>
 			<div class="project-information-container s-h-padding s-b-margin">
+			<ul>
+			 </ul>
 				<ul>
 					<li><span class="xs-r-margin bolded">Date Completed:</span><?php the_field('date_completed');?></li>
 					<li><span class="xs-r-margin bolded">Total Cost:</span>$<?php the_field('project_cost');?></li>

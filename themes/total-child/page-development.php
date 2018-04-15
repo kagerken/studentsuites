@@ -24,22 +24,19 @@
 		<main id="main" class="site-main">
 		
 			<?php
-			$counter = 1;
+			$counter = 0;
 			$args = array('category_name' => 'our-process','order'=>'ASC','orderby'=>'ID');
 			$query = new WP_Query($args);
 			if( $query->have_posts() ):
 			?>
 				<?php while( $query->have_posts()) : $query->the_post(); ?>
-					<?php if( $counter & 1){
-						//odd
-						get_template_part('template-parts/content', 'leftimg');
-					}else{
-						//even
-						get_template_part('template-parts/content', 'rightimg');
-					}
-					$counter++;
-					?>
+						<?php if($counter & 1 ){
+							get_template_part('template-parts/content', 'leftimg');
+						}else{
+							get_template_part('template-parts/content', 'rightimg');
+						}?>
 				<?php 
+				$counter++;
 				endwhile;
 				wp_reset_postdata();
 				?>
