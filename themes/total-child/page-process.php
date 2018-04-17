@@ -30,7 +30,7 @@
 			if( $query->have_posts() ):
 			?>
 				<?php while( $query->have_posts()) : $query->the_post(); ?>
-						<?php if($counter & 1 ){
+						<?php if($counter % 2 ==0 ){
 							get_template_part('template-parts/content', 'leftimg');
 						}else{
 							get_template_part('template-parts/content', 'rightimg');

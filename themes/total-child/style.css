@@ -694,6 +694,25 @@ input[type="radio"], input[type="checkbox"]{
 	-----------------------------------------
 */
 
+
+
+/* 
+	-----------------------------------------
+	Post Types
+	-----------------------------------------
+*/
+.left-image{
+
+}
+.right-image{
+
+}
+/* 
+	-----------------------------------------
+	End Post Types
+	-----------------------------------------
+*/
+
 /* Talia's logo adjustments */
 
 #ht-site-branding img {
@@ -777,7 +796,7 @@ li {
 	.grid-flex-break{
 		flex-wrap: nowrap;
 	}
-	.rightimg{
+	.right-img div>img{
 		order:2;
 	}
 }
