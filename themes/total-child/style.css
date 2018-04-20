@@ -788,7 +788,7 @@ li {
 }
 
 .content-area ul li::before {
-	content: '\2b9a \a0';
+	content: '\25b8 \a0';
 	color: #6C207E;
 	position: absolute;
 	left: -1.1em;
