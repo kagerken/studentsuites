@@ -15,7 +15,7 @@ body, button, input, select, textarea {
 h1, h2, h3, h4, h5, h6, .ht-site-title, .ht-main-title, .ht-post-info, .ht-main-navigation a { 
   font-family: 'Avenir', sans-serif; 
   font-weight: bold; 
-} 
+}
 
 @font-face { 
   font-family: 'Avenir'; 
@@ -97,6 +97,12 @@ blockquote, q{
 ---------------------------------------
 */
 
+/* Ordering */
+.rightimg{
+    order: 1;
+}
+/* End ordering */
+
 .grid-container{
 	margin: .5em initial;
 }
@@ -143,6 +149,11 @@ blockquote, q{
 }
 .grid-item-75{
 	width: 75%;
+}
+
+/* collapsing grids */
+.coll-grid-item-3{
+    width:100%;
 }
 
 /*
@@ -616,6 +627,10 @@ input[type="radio"], input[type="checkbox"]{
 	Contact Us Page
 ---------------------------------------
 */
+.ss-information{
+    margin-left:.5em;
+}
+
 .container input[type="submit"], .container input[type="reset"]{
 	display: inline-block;
 
@@ -626,6 +641,7 @@ input[type="radio"], input[type="checkbox"]{
 	display:flex;
 	flex-direction:column;
 	width:100%;
+	margin: auto 5%;
 }
 .contact-container > *{
 	width:100%;
@@ -679,6 +695,23 @@ input[type="radio"], input[type="checkbox"]{
 	-----------------------------------------
 	End Projects - Single
 	-----------------------------------------
+*/
+
+/* 
+    -----------------------------------------
+    Post Types
+    -----------------------------------------
+*/
+.left-image{
+ 
+}
+.right-image{
+ 
+}
+/* 
+    -----------------------------------------
+    End Post Types
+    -----------------------------------------
 */
 
 /* Talia's logo adjustments */
@@ -778,6 +811,21 @@ li {
 
 /* media queries */
 
+@media screen and (min-width: 768px){
+    .coll-grid-item-3{
+        width:50%;
+ 
+    }
+ 
+    .grid-flex-break{
+        flex-wrap: nowrap;
+    }
+ 
+    .right-image-container{
+        order:2;
+    }
+}
+
 @media screen and (min-width: 1200px) {
 	.contact-container{
 		display:flex;
@@ -797,7 +845,7 @@ li {
 			flex-wrap:nowrap;
 		}
 		.ss-section-container{
-			width: 80%;
+			/*width: 80%;*/
 		}
 		.ss-container .infographic{
 			width: 40%;
@@ -821,6 +869,9 @@ li {
 	.project-grid-row{
 		flex-wrap:nowrap;
 	}
+	.coll-grid-item-3{
+        width:33.33%;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -832,14 +883,18 @@ li {
 /* media queries end */
 
 /*SlideShow styles Jordan*/
+
 .ht-slide-cap-desc {
-    background-color: #fff;
-    color: purple;
-    width: 50%;
-    margin-left: 25%;
+    width: 35%;
     padding: 0;
+    margin: 0 auto;
 }
+.ht-slide-cap-desc-text{
+    color: #6C207E;
+    background-color: #EAEAEA;
+    padding: .25em 1em;
 }
+
 h2.entry-title{
 	margin: 0;
 }
