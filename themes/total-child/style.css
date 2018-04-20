@@ -744,7 +744,7 @@ input[type="radio"], input[type="checkbox"]{
 
 h1, h2, h3, h4, h5, h6 {
 	margin: 1em 0 .85em 0;
-	border-bottom: 3px #6c207e solid;
+	border-bottom: 2px #6c207e solid;
 	padding-bottom: .5em;
 }
 
@@ -754,11 +754,7 @@ h1 {
 	border-width: 5px;
 }
 
-h3 {
-	border-width: 2px;
-}
-
-h4 {
+h3, h4 {
 	border-width: 1px;
 }
 
