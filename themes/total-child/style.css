@@ -662,9 +662,7 @@ input[type="radio"], input[type="checkbox"]{
 .contact-container input {
     margin-bottom: 1.25em;
 }
-.contact-input, .contact-container textarea {
-	margin-left: 1.25em;
-}
+
 .contact-input{
 	width: 70%;
 	max-width: 400px;
@@ -723,7 +721,7 @@ input[type="radio"], input[type="checkbox"]{
 }
 /* end Talia's logo adjustments */
 
-/* Talia's experimental tweaks */
+/* Talia's tweaks */
 
 .ht-main-navigation a {
 	transition: background-color .25s;
@@ -740,15 +738,19 @@ input[type="radio"], input[type="checkbox"]{
 }
 
 .ht-main-header {
-	background: #EAEAEA;
-	padding: 2em 0;
+	background: #fff;
+	padding: 1.75em 0;
 	text-align: center;
 }	
 
-h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
 	margin: 1em 0 .85em 0;
 	border-bottom: 3px #6c207e solid;
 	padding-bottom: .5em;
+}
+
+h1 {
+	font-size: 2em;
 }
 
 h3 {
@@ -795,7 +797,7 @@ li {
 	left: -1.1em;
 }
 
-/* Talia's experimental tweaks end */
+/* Talia's tweaks end */
 
 /* Talia's slider tweaks */
 
