@@ -884,6 +884,10 @@ li {
 
 /*SlideShow styles Jordan*/
 
+.ht-slide-cap-title {
+    margin-bottom: 2px;
+}
+
 .ht-slide-cap-desc {
     width: 35%;
     padding: 0;
