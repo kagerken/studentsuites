@@ -714,6 +714,8 @@ input[type="radio"], input[type="checkbox"]{
 
 h2, h3, h4, h5, h6 {
 	margin: 1em 0 .85em 0;
+	border-bottom: 3px #6c207e solid;
+	padding-bottom: .5em;
 }
 
 h3 {
@@ -733,6 +735,10 @@ h5, h6 {
 	/*border-top: 3px #EAEAEA solid;*/
 	padding: .25em;
 	border-bottom: 3px #6c207e solid;
+}
+
+#centerblock {
+	border-color: #6c207e;
 }
 
 section {
@@ -757,6 +763,18 @@ li {
 }
 
 /* Talia's experimental tweaks end */
+
+/* Talia's slider tweaks */
+
+.ht-slide { 
+	max-height: 100vh;
+}
+
+#ht-home-slider-section .owl-carousel .owl-nav .owl-prev, #ht-home-slider-section .owl-carousel .owl-nav .owl-next {
+    background-color: #000;
+}
+
+/* Talia's slider tweaks end */
 
 /* media queries */
 
@@ -826,11 +844,3 @@ h2.entry-title{
 	margin: 0;
 }
 /* end SlideShow styles Jordan */
-
-/* Talia slideshow resize */
-
-.ht-slide {
-	max-height: 90vh;
-}
-
-/* end Talia slideshow resize */
