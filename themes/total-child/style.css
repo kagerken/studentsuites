@@ -738,7 +738,7 @@ input[type="radio"], input[type="checkbox"]{
 }
 
 .ht-main-header {
-	background: #fff;
+	background: #eaeaea;
 	padding: 1.75em 0;
 }	
 
@@ -750,7 +750,6 @@ h2, h3, h4, h5, h6 {
 
 h1 {
 	font-size: 2em;
-	background-color: #eaeaea;
 }
 
 h3, h4 {
