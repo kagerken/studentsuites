@@ -550,7 +550,7 @@ input[type="radio"], input[type="checkbox"]{
 ---------------------------------------
 */
 #centerblock{
-	border-bottom: 3px solid black;
+	border-bottom: 3px solid #6c207e;
 }
 #centerblock p{
     width: 82%;
@@ -742,7 +742,7 @@ input[type="radio"], input[type="checkbox"]{
 	padding: 1.75em 0;
 }	
 
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
 	margin: 1em 0 .85em 0;
 	border-bottom: 2px #6c207e solid;
 	padding-bottom: .5em;
@@ -750,8 +750,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
 	font-size: 2em;
-	border-color: #9370b1;
-	border-width: 5px;
+	background-color: #eaeaea;
 }
 
 h3, h4 {
@@ -769,8 +768,8 @@ h5, h6 {
 	border-bottom: 3px #6c207e solid;
 }
 
-#centerblock {
-	border-color: #6c207e;
+.ss-information h2, h3, h4, h5, h6 {
+	border-width: 0;
 }
 
 section {
