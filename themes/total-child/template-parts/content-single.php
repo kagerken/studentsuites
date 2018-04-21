@@ -21,7 +21,7 @@
 					<li><span class="xs-r-margin bolded"># of Beds:</span><?php the_field('project_beds');?></li>
 					<li><span class="xs-r-margin bolded">Per Bed Cost:</span>$<?php the_field('per_bed_cost');?></li>
 					<li><span class="xs-r-margin bolded">Per Square Foot:</span>$<?php the_field('square_footage_cost');?></li>
-					<li><a href="<?php the_field('file_attachements') ?>" target="_blank">Download Project Case Study</a></li>
+					<li><a href="<?php the_field('file_attachements') ?>" target="_blank" onclick=”_gaq.push([‘_trackEvent’,’Download’,’PDF’,this.href]);”>Download Project Case Study</a></li><!--onclick code added for Google Analytics Tracking of PDF Download LunaJ 20 April 2018-->
 				</ul>
 			</div>
 			
