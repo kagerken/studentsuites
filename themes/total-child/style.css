@@ -99,6 +99,11 @@ blockquote, q{
 
 /* Ordering */
 .rightimg{
+
+	order: 1;
+}
+/* End ordering */
+=======
     order: 1;
 }
 /* End ordering */
@@ -153,7 +158,11 @@ blockquote, q{
 
 /* collapsing grids */
 .coll-grid-item-3{
+
+	width:100%;
+=======
     width:100%;
+
 }
 
 /*
@@ -582,7 +591,6 @@ input[type="radio"], input[type="checkbox"]{
 	justify-content: space-around;
 }
 .ss-section-container{
-	width: 95%;
 	margin: 0 auto;
 }
 
@@ -628,6 +636,10 @@ input[type="radio"], input[type="checkbox"]{
 ---------------------------------------
 */
 .ss-information{
+
+	margin-left:.5em;
+}
+=======
     margin-left:.5em;
 }
 
@@ -695,6 +707,25 @@ input[type="radio"], input[type="checkbox"]{
 	-----------------------------------------
 */
 
+
+
+
+/* 
+	-----------------------------------------
+	Post Types
+	-----------------------------------------
+*/
+.left-image{
+
+}
+.right-image{
+
+}
+/* 
+	-----------------------------------------
+	End Post Types
+	-----------------------------------------
+
 /* 
     -----------------------------------------
     Post Types
@@ -710,6 +741,7 @@ input[type="radio"], input[type="checkbox"]{
     -----------------------------------------
     End Post Types
     -----------------------------------------
+
 */
 
 /* Talia's logo adjustments */
@@ -794,6 +826,20 @@ li {
 	left: -1.1em;
 }
 
+
+/* Talia's experimental tweaks end */
+@media screen and (min-width: 768px){
+	.coll-grid-item-3{
+		width:50%;
+	}
+	.grid-flex-break{
+		flex-wrap: nowrap;
+	}
+	.right-img div>img{
+		order:2;
+	}
+}
+
 /* Talia's tweaks end */
 
 /* Talia's slider tweaks */
@@ -825,6 +871,7 @@ li {
     }
 }
 
+
 @media screen and (min-width: 1200px) {
 	.contact-container{
 		display:flex;
@@ -840,8 +887,8 @@ li {
 		Home Page
 	----------------------------
 	*/
-	.ss-container{
-			flex-wrap:nowrap;
+		.ss-container{
+			flex-wrap: nowrap;
 		}
 		.ss-section-container{
 			/*width: 80%;*/
@@ -869,6 +916,9 @@ li {
 		flex-wrap:nowrap;
 	}
 	.coll-grid-item-3{
+
+		width:33.33%;
+=======
         width:33.33%;
     }
 }
@@ -876,12 +926,27 @@ li {
 @media screen and (max-width: 768px) {
 	.grid-row {
 		display: block;
+
 	}
 }
 
 /* media queries end */
 
 /*SlideShow styles Jordan*/
+
+.ht-slide-cap-title{
+	margin-bottom: 2px;
+}
+.ht-slide-cap-desc {
+    width: 35%;
+    padding: 0;
+	margin: 0 auto;
+}
+.ht-slide-cap-desc-text{
+	color: #6C207E;
+	background-color: #EAEAEA;
+	padding: .25em 1em;
+=======
 
 .ht-slide-cap-title {
     margin-bottom: 2px;
@@ -896,6 +961,7 @@ li {
     color: #6C207E;
     background-color: #EAEAEA;
     padding: .25em 1em;
+
 }
 
 h2.entry-title{

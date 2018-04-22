@@ -13,8 +13,8 @@
 
 
 ?>
-
-<article id="post-<?php the_ID(); ?>" <?php post_class(array('total-hentry','grid-item-3','grid-item-2','grid-item-1')); ?>>
+<?php $a = array('total-hentry','coll-grid-item-3'); ?>
+<article id="post-<?php the_ID(); ?>" <?php post_class($a); ?>>
 
 
 	<div class="m-h-padding">

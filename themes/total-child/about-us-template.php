@@ -43,7 +43,7 @@
 					?>
 				<h2>Meet the Leadership</h2>
 				<div class="grid-container">
-					<div class="grid-row">
+					<div class="grid-row grid-flex-break">
 						<?php while( $query->have_posts()) : $query->the_post(); ?>
 							<?php get_template_part('template-parts/content', 'leadership'); ?>
 							
