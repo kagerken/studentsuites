@@ -15,7 +15,7 @@ body, button, input, select, textarea {
 h1, h2, h3, h4, h5, h6, .ht-site-title, .ht-main-title, .ht-post-info, .ht-main-navigation a { 
   font-family: 'Avenir', sans-serif; 
   font-weight: bold; 
-} 
+}
 
 @font-face { 
   font-family: 'Avenir'; 
@@ -99,9 +99,15 @@ blockquote, q{
 
 /* Ordering */
 .rightimg{
+
 	order: 1;
 }
 /* End ordering */
+=======
+    order: 1;
+}
+/* End ordering */
+
 .grid-container{
 	margin: .5em initial;
 }
@@ -152,7 +158,11 @@ blockquote, q{
 
 /* collapsing grids */
 .coll-grid-item-3{
+
 	width:100%;
+=======
+    width:100%;
+
 }
 
 /*
@@ -549,7 +559,7 @@ input[type="radio"], input[type="checkbox"]{
 ---------------------------------------
 */
 #centerblock{
-	border-bottom: 3px solid black;
+	border-bottom: 3px solid #6c207e;
 }
 #centerblock p{
     width: 82%;
@@ -626,8 +636,13 @@ input[type="radio"], input[type="checkbox"]{
 ---------------------------------------
 */
 .ss-information{
+
 	margin-left:.5em;
 }
+=======
+    margin-left:.5em;
+}
+
 .container input[type="submit"], .container input[type="reset"]{
 	display: inline-block;
 
@@ -659,9 +674,7 @@ input[type="radio"], input[type="checkbox"]{
 .contact-container input {
     margin-bottom: 1.25em;
 }
-.contact-input, .contact-container textarea {
-	margin-left: 1.25em;
-}
+
 .contact-input{
 	width: 70%;
 	max-width: 400px;
@@ -696,6 +709,7 @@ input[type="radio"], input[type="checkbox"]{
 
 
 
+
 /* 
 	-----------------------------------------
 	Post Types
@@ -711,6 +725,23 @@ input[type="radio"], input[type="checkbox"]{
 	-----------------------------------------
 	End Post Types
 	-----------------------------------------
+
+/* 
+    -----------------------------------------
+    Post Types
+    -----------------------------------------
+*/
+.left-image{
+ 
+}
+.right-image{
+ 
+}
+/* 
+    -----------------------------------------
+    End Post Types
+    -----------------------------------------
+
 */
 
 /* Talia's logo adjustments */
@@ -722,7 +753,7 @@ input[type="radio"], input[type="checkbox"]{
 }
 /* end Talia's logo adjustments */
 
-/* Talia's experimental tweaks */
+/* Talia's tweaks */
 
 .ht-main-navigation a {
 	transition: background-color .25s;
@@ -739,20 +770,22 @@ input[type="radio"], input[type="checkbox"]{
 }
 
 .ht-main-header {
-	background: #EAEAEA;
-	padding: 2em 0;
+	background: #eaeaea;
+	padding: 1.75em 0;
 	text-align: center;
 }	
 
 h2, h3, h4, h5, h6 {
 	margin: 1em 0 .85em 0;
+	border-bottom: 2px #6c207e solid;
+	padding-bottom: .5em;
 }
 
-h3 {
-	border-width: 2px;
+h1 {
+	font-size: 2em;
 }
 
-h4 {
+h3, h4 {
 	border-width: 1px;
 }
 
@@ -765,6 +798,11 @@ h5, h6 {
 	/*border-top: 3px #EAEAEA solid;*/
 	padding: .25em;
 	border-bottom: 3px #6c207e solid;
+}
+
+.ss-information h2, h3, h4, h5, h6 {
+	border-width: 0;
+	padding-bottom: inherit;
 }
 
 section {
@@ -782,11 +820,12 @@ li {
 }
 
 .content-area ul li::before {
-	content: '\2b9a \a0';
+	content: '\25b8 \a0';
 	color: #6C207E;
 	position: absolute;
 	left: -1.1em;
 }
+
 
 /* Talia's experimental tweaks end */
 @media screen and (min-width: 768px){
@@ -800,6 +839,39 @@ li {
 		order:2;
 	}
 }
+
+/* Talia's tweaks end */
+
+/* Talia's slider tweaks */
+
+.ht-slide { 
+	max-height: 100vh;
+}
+
+#ht-home-slider-section .owl-carousel .owl-nav .owl-prev, #ht-home-slider-section .owl-carousel .owl-nav .owl-next {
+    background-color: #000;
+}
+
+/* Talia's slider tweaks end */
+
+/* media queries */
+
+@media screen and (min-width: 768px){
+    .coll-grid-item-3{
+        width:50%;
+ 
+    }
+ 
+    .grid-flex-break{
+        flex-wrap: nowrap;
+    }
+ 
+    .right-image-container{
+        order:2;
+    }
+}
+
+
 @media screen and (min-width: 1200px) {
 	.contact-container{
 		display:flex;
@@ -844,12 +916,24 @@ li {
 		flex-wrap:nowrap;
 	}
 	.coll-grid-item-3{
+
 		width:33.33%;
+=======
+        width:33.33%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+	.grid-row {
+		display: block;
+
 	}
 }
 
+/* media queries end */
 
 /*SlideShow styles Jordan*/
+
 .ht-slide-cap-title{
 	margin-bottom: 2px;
 }
@@ -862,9 +946,25 @@ li {
 	color: #6C207E;
 	background-color: #EAEAEA;
 	padding: .25em 1em;
+=======
+
+.ht-slide-cap-title {
+    margin-bottom: 2px;
+}
+
+.ht-slide-cap-desc {
+    width: 35%;
+    padding: 0;
+    margin: 0 auto;
+}
+.ht-slide-cap-desc-text{
+    color: #6C207E;
+    background-color: #EAEAEA;
+    padding: .25em 1em;
+
 }
 
 h2.entry-title{
 	margin: 0;
 }
-
+/* end SlideShow styles Jordan */
