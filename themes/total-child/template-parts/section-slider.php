@@ -70,7 +70,7 @@
 
 						<div class="ht-slide-cap-desc">
 
-							<span class="ht-slide-cap-desc-text"><?php echo esc_html(get_the_content()); ?></span>
+							<div class="ht-slide-cap-desc-text"><?php echo esc_html(get_the_content()); ?></div>
 
 						</div>
 
