@@ -103,10 +103,6 @@ blockquote, q{
 	order: 1;
 }
 /* End ordering */
-=======
-    order: 1;
-}
-/* End ordering */
 
 .grid-container{
 	margin: .5em initial;
@@ -158,11 +154,7 @@ blockquote, q{
 
 /* collapsing grids */
 .coll-grid-item-3{
-
 	width:100%;
-=======
-    width:100%;
-
 }
 
 /*
@@ -636,17 +628,11 @@ input[type="radio"], input[type="checkbox"]{
 ---------------------------------------
 */
 .ss-information{
-
-	margin-left:.5em;
-}
-=======
     margin-left:.5em;
 }
 
 .container input[type="submit"], .container input[type="reset"]{
 	display: inline-block;
-
-
 	margin-top:1em;
 }
 .contact-container{
@@ -664,7 +650,6 @@ input[type="radio"], input[type="checkbox"]{
 }
 .contact-container label, .contact-container input{
 	display:block;
-
 }
 .contact-container label { 
   font-weight: bold; 
@@ -826,12 +811,15 @@ li {
 	left: -1.1em;
 }
 
-<<<<<<< HEAD
 .entry-figure {
 	background: #fff;
-=======
+}
 
-/* Talia's experimental tweaks end */
+.timeline-express-read-more-link {
+    font-weight: bold;
+    font-size: 1.05em;
+}
+
 @media screen and (min-width: 768px){
 	.coll-grid-item-3{
 		width:50%;
@@ -842,7 +830,6 @@ li {
 	.right-img div>img{
 		order:2;
 	}
->>>>>>> 061dff53650aece5781b73375418a072414ef92f
 }
 
 /* Talia's tweaks end */
@@ -921,10 +908,7 @@ li {
 		flex-wrap:nowrap;
 	}
 	.coll-grid-item-3{
-
 		width:33.33%;
-=======
-        width:33.33%;
     }
 }
 
