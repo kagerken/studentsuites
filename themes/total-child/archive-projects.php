@@ -20,7 +20,6 @@ get_header(); ?>
 <div class="ht-container">
 	<div class="content-area">
 		<main id="main" class="site-main" role="main">
-
 		<?php if (have_posts() ) : ?>
 			<div class="grid-row grid-flex-wrap">
 			<?php /* Start the Loop */ ?>

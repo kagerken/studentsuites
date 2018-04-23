@@ -28,7 +28,7 @@ wp_reset_postdata();
 				if( $ss->have_posts() ): ?>
 
 					<?php while($ss->have_posts() ) : $ss->the_post();?>
-						<div id="centerblock">
+						<div id="centerblock" class="l-v-padding">
 			        		<?php the_content();?>
 						</div>
 					
@@ -45,15 +45,16 @@ wp_reset_postdata();
 
 				<?php while( $ss->have_posts() ) : $ss->the_post(); ?>
 					<div class="ss-section-container">
-						<div class="homeHeading l-h-padding">
+						<div class="homeHeading l-v-padding">
 							<h1><?php the_title(); ?></h1>
 						</div>
-					<div class="ss-container">
-						<div class="infographic m-b-margin l-h-padding">
-							<?php the_post_thumbnail( 'total-portfolio-thumb' ); ?>
-						</div>
-						<div class="ss-center-right m-b-margin l-h-padding">
-							<?php the_content() ?>
+						<div class="ss-container grid-row">
+							<div class="infographic m-b-margin l-h-padding">
+								<?php the_post_thumbnail( 'total-portfolio-thumb' ); ?>
+							</div>
+							<div class="ss-center-right m-b-margin l-h-padding">
+								<?php the_content() ?>
+							</div>
 						</div>
 					</div>
 				<?php 
@@ -63,14 +64,8 @@ wp_reset_postdata();
 			<?php endif; ?>
 		
     <div id="bottom">
-
-        <button class="ss-call-to-action"><a href="#" title="">Call To Action</a></button>
-
-        <button class="ss-call-to-action"><a href="#" title="">Call To Action</a></button>
-
-        <button class="ss-call-to-action"><a href="#" title="">Call To Action</a></button>
-
-        <button class="ss-call-to-action"><a href="#" title="">Call To Action</a></button>
+        <div class="ss-call-to-action"><a href="#" title="">Call To Action</a></div>
+        <div class="ss-call-to-action"><a href="#" title="">Call To Action</a></div>
     </div>
 
 		</main>
