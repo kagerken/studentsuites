@@ -50,6 +50,8 @@ get_header(); ?>
 
 </div>
 
+<?php get_footer(); ?>
+
 <script>
 	function heightEqualsWidth() {
 		console.log('test');
@@ -60,8 +62,6 @@ get_header(); ?>
 		}
 	}
 
-	heightEqualsWidth();
 	window.addEventListener('resize', heightEqualsWidth);
+	window.addEventListener('load', heightEqualsWidth);
 </script>
-
-<?php get_footer(); ?>
