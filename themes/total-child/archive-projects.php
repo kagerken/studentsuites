@@ -57,10 +57,10 @@ get_header(); ?>
 		var figures = document.getElementsByClassName('entry-figure');
 		console.log('test');
 		var entriesWidth = figures[0].offsetWidth;
-		console.log('entriesWidth:' + entriesWidth);
+		console.log('entriesWidth: ' + entriesWidth);
 		for (var i = 0; i < figures.length; i++) {
 			figures[i].style.height = entriesWidth;
-			console.log('new height: ' + entriesWidth);
+			console.log(entriesWidth[i].style.height);
 		}
 	}
 
