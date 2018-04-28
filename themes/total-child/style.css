@@ -778,6 +778,11 @@ h5, h6 {
 	border-width: 0;
 }
 
+.ht-main-header h2, .ht-main-header h3, .ht-main-header h4, .ht-main-header h5, .ht-main-header h6 {
+    border-bottom-width: 0;
+    padding-bottom: 0;
+}
+
 .centered-headings h1, .centered-headings h2, .centered-headings h3, .centered-headings h4, .centered-headings h5, .centered-headings h6 {
 	text-align: center;
 	/*border-top: 3px #EAEAEA solid;*/
