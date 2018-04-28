@@ -58,6 +58,7 @@ get_header(); ?>
 		console.log('test');
 		var entriesWidth = figures[0].offsetWidth;
 		for (var i = 0; i < figures.length; i++) {
+			console.log(i);
 			figures[i].style.height = entriesWidth;
 		}
 	}
