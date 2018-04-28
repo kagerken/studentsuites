@@ -65,11 +65,11 @@ blockquote, q{
 	padding-left: 15px;
 }
 
-.entry-content a {
+.content-area a {
 /* style for links within the content blocks */
 	/*font-weight: bold;*/
 }
-.entry-content a:hover {
+.content-area a:hover {
 	text-decoration: underline;
 }
 .bolded{
