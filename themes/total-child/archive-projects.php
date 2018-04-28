@@ -55,9 +55,9 @@ get_header(); ?>
 <script>
 	function heightEqualsWidth() {
 		var figures = document.getElementsByClassName('entry-figure');
-		console.log(figures);
+		console.log('test');
 		var entriesWidth = figures[0].offsetWidth;
-		for (var i = figures.length; i > 0; i--) {
+		for (var i = 0; i < figures.length; i++) {
 			figures[i].style.height = entriesWidth;
 		}
 	}
