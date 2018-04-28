@@ -60,7 +60,7 @@ get_header(); ?>
 		console.log('entriesWidth: ' + entriesWidth);
 		for (var i = 0; i < figures.length; i++) {
 			figures[i].style.height = entriesWidth;
-			console.log(figures[i].style.height);
+			console.log('height: ' + figures[i].style.height);
 		}
 	}
 
