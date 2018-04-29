@@ -825,6 +825,19 @@ li {
     font-size: 1.05em;
 }
 
+.entry-figure + .entry-header {
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+	padding: 15px;
+}
+
+.entry-header .entry-title {
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+}
+
 @media screen and (min-width: 768px){
 	.coll-grid-item-3{
 		width:50%;
