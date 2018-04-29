@@ -852,6 +852,22 @@ li {
 
 /* Talia's tweaks end */
 
+/* CTA buttons */
+
+.ss-call-to-action {
+	background: #6c207e;
+	padding: 2em;
+	border-radius: 4em;
+	width: 7.5em;
+	text-align: center;
+}
+
+.ss-call-to-action a, .ss-call-to-action a:visited {
+	color: #fff;
+}
+
+/* CTA buttons end */
+
 /* Talia's slider tweaks */
 
 .ht-slide { 
