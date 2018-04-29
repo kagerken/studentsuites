@@ -816,13 +816,13 @@ li {
 	left: -1.1em;
 }
 
-.entry-figure {
-	background: #fff;
-}
-
 .timeline-express-read-more-link {
     font-weight: bold;
     font-size: 1.05em;
+}
+
+.entry-figure {
+	background: #fff;
 }
 
 .entry-figure + .entry-header {
@@ -831,6 +831,15 @@ li {
 	width: fit-content;*/
 	padding: 15px;
 	margin-top: unset;
+}
+
+.entry-figure img {
+	transition: box-shadow .2s;
+}
+
+.entry-figure img:hover {
+	box-shadow: 0 0 7px #6C207E;
+	transition: box-shadow .2s;
 }
 
 .entry-header .entry-title {
