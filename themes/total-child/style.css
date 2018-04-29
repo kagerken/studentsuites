@@ -838,7 +838,7 @@ li {
 }
 
 .entry-figure img:hover {
-	box-shadow: 0 0 7px #6C207E;
+	box-shadow: 0 0 10px #6C207E;
 	transition: box-shadow .2s;
 }
 
