@@ -862,7 +862,7 @@ li {
 	text-align: center;
 }
 
-.ss-call-to-action a, .ss-call-to-action a:visited {
+.ss-call-to-action a, .ss-call-to-action a:hover, .ss-call-to-action a:visited {
 	color: #fff;
 }
 
