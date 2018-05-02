@@ -867,6 +867,107 @@ li {
 	}
 }
 
+/* --- Making tablets switch to hamburger menu --- */
+
+/*@media screen and (max-width: 1039px){
+	.toggle-bar{
+		display: block;
+		position: absolute;
+		top: 22px;
+		right: 20px;
+		height: 50px;
+		width: 50px;
+		cursor: pointer;
+	}
+	
+	.toggle-bar span{
+		position: absolute;
+		top: 50%;
+		margin-top: -2px;
+		height: 4px;
+		left: 8px;
+		right: 8px;
+		background: #FFF;
+		box-shadow: 0 10px 0 0 #FFF, 0 -10px 0 0 #FFF;
+	}
+
+	.ht-sticky-header #ht-masthead{
+		position: static;
+	}
+
+	.ht-sticky#ht-masthead{
+		height: 94px;	
+	}
+
+	#ht-site-navigation{
+		width: 20%;
+	}
+
+	#ht-site-branding{
+		width: 80%;
+		float: left;
+	}
+
+	.ht-sticky #ht-site-branding{
+		padding: 15px 0;
+	}
+
+	.ht-sticky-header #ht-content{
+		padding-top: 0;
+	}
+
+	.ht-main-navigation .ht-menu{
+		display: none;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 90px;
+		background: #FFC107;
+		z-index: 999;
+	}
+
+	.ht-main-navigation li{
+		float: none;
+		margin-left: 0;
+		text-align: center;
+	}
+
+	.page-template-home-template .ht-main-navigation .current_page_item > a,
+	.page-template-home-template .ht-main-navigation .current-menu-item > a,
+	.page-template-home-template .ht-main-navigation .current_page_ancestor > a,
+	.home.blog .ht-main-navigation .current_page_item > a,
+	.home.blog .ht-main-navigation .current-menu-item > a,
+	.home.blog .ht-main-navigation .current_page_ancestor > a,
+	.ht-main-navigation a{
+		color: #FFF;
+	}
+
+	.ht-main-navigation ul ul{
+		position: static;
+		padding: 0;
+        margin-top: 0;
+	}
+
+	.ht-main-navigation ul ul ul{
+		margin: 0;
+	}
+
+	#ht-team-section{
+		padding-bottom: 30px;
+	}
+
+	.ht-team-member{
+		width: 48%;
+		margin-bottom: 30px;
+	}
+}
+
+.toggle-bar, .ht-main-navigation .ht-menu {
+	background: #6c207e;
+}*/
+
+/* --- Making tablets switch to hamburger menu end --- */
+
 /* Talia's tweaks end */
 
 /* CTA buttons */
