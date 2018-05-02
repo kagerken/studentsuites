@@ -872,6 +872,11 @@ li {
 	width: 50px;
 }
 
+.ht-site-info p {
+	float: right;
+	padding-top: 15px;
+}
+
 .ht-site-info a {
 	border-width: 0;
 }
