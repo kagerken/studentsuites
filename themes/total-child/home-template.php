@@ -16,6 +16,7 @@
 get_header();
 get_template_part('template-parts/section', 'slider');
 wp_reset_postdata();
+add_image_size('custom_size', 583, 388, false);
 ?>
 
 <div class="ht-container">
@@ -50,7 +51,7 @@ wp_reset_postdata();
 						</div>
 						<div class="ss-container grid-row">
 							<div class="infographic m-b-margin l-h-padding">
-								<?php the_post_thumbnail( 'total-portfolio-thumb' ); ?>
+								<?php the_post_thumbnail( 'custom_size' ); ?>
 							</div>
 							<div class="ss-center-right m-b-margin l-h-padding">
 								<?php the_content() ?>
