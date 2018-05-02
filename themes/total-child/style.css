@@ -867,6 +867,15 @@ li {
 	}
 }
 
+.social-button {
+	float: left;
+	width: 50px;
+}
+
+.ht-site-info a {
+	border-width: 0;
+}
+
 /* --- Making tablets switch to hamburger menu --- */
 
 /*@media screen and (max-width: 1039px){
