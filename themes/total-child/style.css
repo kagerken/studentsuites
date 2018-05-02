@@ -848,6 +848,10 @@ li {
 	width: fit-content;*/
 }
 
+.leadership-photos-container {
+	text-align: center;
+}
+
 @media screen and (min-width: 768px){
 	.coll-grid-item-3{
 		width:50%;
@@ -857,6 +861,9 @@ li {
 	}
 	.right-img div>img{
 		order:2;
+	}
+	.leadership-photos-container img {
+		max-width: 50%;
 	}
 }
 
