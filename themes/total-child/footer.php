@@ -45,6 +45,7 @@
 		<div id="ht-bottom-footer">
 			<div class="ht-container">
 				<div class="ht-site-info">
+					<a href="https://www.linkedin.com/company/student-suites/" target="_blank"><img src="<?php bloginfo('wpurl'); ?>/in-2crev-101px-r/" alt="LinkedIn logo"></a>
                     <p>Student Suites &copy; 2018</p>
 				</div><!-- #site-info -->
 			</div>
