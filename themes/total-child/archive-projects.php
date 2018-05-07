@@ -11,7 +11,7 @@ get_header(); ?>
 <header class="ht-main-header">
 	<div class="ht-container">
 		<h1><?php
-			wp_title('');
+			the_archive_description();
 		?>
 		</h1>
 	</div>
@@ -55,12 +55,9 @@ get_header(); ?>
 <script>
 	function heightEqualsWidth() {
 		var figures = document.querySelectorAll('.entry-figure img');
-		console.log('test');
 		var entriesWidth = (figures[0].offsetWidth) + 'px';
-		console.log('entriesWidth: ' + entriesWidth);
 		for (var i = 0; i < figures.length; i++) {
 			figures[i].style.height = entriesWidth;
-			console.log('height: ' + figures[i].style.height);
 		}
 	}
 
