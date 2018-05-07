@@ -993,6 +993,7 @@ li {
 	width: 8em;
 	height: 8em;
 	text-align: center;
+	margin-bottom: 1em;
 }
 
 .ss-call-to-action, .ss-call-to-action:hover, .ss-call-to-action:visited {
