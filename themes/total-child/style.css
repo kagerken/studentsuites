@@ -575,7 +575,7 @@ input[type="radio"], input[type="checkbox"]{
     }
 
 #bottom{
-	width: 60%;
+	width: 70%;
 	margin: 1.5em auto;
 	display:flex;
 	flex-direction:row;
@@ -995,7 +995,7 @@ li {
 	text-align: center;
 }
 
-.ss-call-to-action a, .ss-call-to-action a:hover, .ss-call-to-action a:visited {
+.ss-call-to-action, .ss-call-to-action:hover, .ss-call-to-action:visited {
 	color: #fff;
 }
 

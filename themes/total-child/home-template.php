@@ -66,11 +66,11 @@ add_image_size('custom_size', 583, 388, false);
 	
 	<h2>Check out the work we've done for:</h2>
     <div id="bottom">
-        <div class="ss-call-to-action"><a href="https://tdegisi.web.csit.jccc.edu/studentsuites/category/college-attributes/community-college/">Community Colleges</a></div>
-        <div class="ss-call-to-action"><a href="https://tdegisi.web.csit.jccc.edu/studentsuites/category/college-attributes/public/">Public<br> Colleges</a></div>
-		<div class="ss-call-to-action"><a href="https://tdegisi.web.csit.jccc.edu/studentsuites/category/college-attributes/private/">Private<br> Colleges</a></div>
-		<div class="ss-call-to-action"><a href="https://tdegisi.web.csit.jccc.edu/studentsuites/category/college-attributes/hbcu/">HBCU</a></div>
-		<div class="ss-call-to-action"><a href="https://tdegisi.web.csit.jccc.edu/studentsuites/category/college-attributes/4-year/">4 Year<br> Schools</a></div>
+        <a href="https://tdegisi.web.csit.jccc.edu/studentsuites/category/college-attributes/community-college/" class="ss-call-to-action">Community Colleges</a>
+        <a href="https://tdegisi.web.csit.jccc.edu/studentsuites/category/college-attributes/public/" class="ss-call-to-action">Public<br> Colleges</a>
+		<a href="https://tdegisi.web.csit.jccc.edu/studentsuites/category/college-attributes/private/" class="ss-call-to-action">Private<br> Colleges</a>
+		<a href="https://tdegisi.web.csit.jccc.edu/studentsuites/category/college-attributes/hbcu/" class="ss-call-to-action">HBCU</a>
+		<a href="https://tdegisi.web.csit.jccc.edu/studentsuites/category/college-attributes/4-year/" class="ss-call-to-action">4 Year<br> Schools</a>
     </div>
 
 		</main>
