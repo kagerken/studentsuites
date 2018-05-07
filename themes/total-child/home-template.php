@@ -69,7 +69,7 @@ add_image_size('custom_size', 583, 388, false);
         <a href="https://tdegisi.web.csit.jccc.edu/studentsuites/category/college-attributes/community-college/" class="ss-call-to-action">Community Colleges</a>
         <a href="https://tdegisi.web.csit.jccc.edu/studentsuites/category/college-attributes/public/" class="ss-call-to-action">Public<br> Colleges</a>
 		<a href="https://tdegisi.web.csit.jccc.edu/studentsuites/category/college-attributes/private/" class="ss-call-to-action">Private<br> Colleges</a>
-		<a href="https://tdegisi.web.csit.jccc.edu/studentsuites/category/college-attributes/hbcu/" class="ss-call-to-action">HBCU</a>
+		<a href="https://tdegisi.web.csit.jccc.edu/studentsuites/category/college-attributes/hbcu/" class="ss-call-to-action one-line">HBCU</a>
 		<a href="https://tdegisi.web.csit.jccc.edu/studentsuites/category/college-attributes/4-year/" class="ss-call-to-action">4 Year<br> Schools</a>
     </div>
 
