@@ -1,11 +1,10 @@
-function heightEqualsWidth() {
-	console.log('test');
-	var figures = document.getElementsByClassName('entry-figure');
-	var entriesWidth = figures[0].offsetWidth;
-	for (var i = figures.length; i > 0; i++) {
-		figures[i].style.height = entriesWidth;
+	function heightEqualsWidth() {
+		var figures = document.querySelectorAll('.entry-figure img');
+		var entriesWidth = (figures[0].offsetWidth) + 'px';
+		for (var i = 0; i < figures.length; i++) {
+			figures[i].style.height = entriesWidth;
+		}
 	}
-}
 
-heightEqualsWidth();
-window.addEventListener('resize', heightEqualsWidth);
+	window.addEventListener('resize', heightEqualsWidth);
+	window.addEventListener('load', heightEqualsWidth);
