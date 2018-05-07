@@ -51,7 +51,8 @@ add_image_size('custom_size', 583, 388, false);
 						</div>
 						<div class="ss-container grid-row">
 							<div class="infographic m-b-margin l-h-padding">
-								<?php the_post_thumbnail( 'custom_size' ); ?>
+								<a href="<?php $src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full', false );
+  echo $src[0]; ?>" target="_blank"><?php the_post_thumbnail( 'custom_size' ); ?></a>
 							</div>
 							<div class="ss-center-right m-b-margin l-h-padding">
 								<?php the_content() ?>
