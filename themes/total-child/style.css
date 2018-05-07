@@ -988,9 +988,10 @@ li {
 
 .ss-call-to-action {
 	background: #6c207e;
-	padding: 2em;
+	padding: 2.5em 0;
 	border-radius: 4em;
-	width: 7.5em;
+	width: 8em;
+	height: 8em;
 	text-align: center;
 }
 

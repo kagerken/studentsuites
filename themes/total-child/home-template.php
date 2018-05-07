@@ -63,10 +63,14 @@ add_image_size('custom_size', 583, 388, false);
 					wp_reset_postdata();
 				?>
 			<?php endif; ?>
-		
+	
+	<h2>Check out the work we've done for:</h2>
     <div id="bottom">
-        <div class="ss-call-to-action"><a href="#" title="">Call To Action</a></div>
-        <div class="ss-call-to-action"><a href="#" title="">Call To Action</a></div>
+        <div class="ss-call-to-action"><a href="https://tdegisi.web.csit.jccc.edu/studentsuites/category/college-attributes/community-college/">Community Colleges</a></div>
+        <div class="ss-call-to-action"><a href="https://tdegisi.web.csit.jccc.edu/studentsuites/category/college-attributes/public/">Public<br> Colleges</a></div>
+		<div class="ss-call-to-action"><a href="https://tdegisi.web.csit.jccc.edu/studentsuites/category/college-attributes/private/">Private<br> Colleges</a></div>
+		<div class="ss-call-to-action"><a href="https://tdegisi.web.csit.jccc.edu/studentsuites/category/college-attributes/hbcu/">HBCU</a></div>
+		<div class="ss-call-to-action"><a href="https://tdegisi.web.csit.jccc.edu/studentsuites/category/college-attributes/4-year/">4 Year<br> Schools</a></div>
     </div>
 
 		</main>
