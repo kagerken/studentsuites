@@ -700,12 +700,7 @@ input[type="radio"], input[type="checkbox"]{
 	Post Types
 	-----------------------------------------
 */
-.left-image{
 
-}
-.right-image{
-
-}
 /* 
 	-----------------------------------------
 	End Post Types
@@ -859,7 +854,7 @@ li {
 	.grid-flex-break{
 		flex-wrap: nowrap;
 	}
-	.right-img div>img{
+	.right-image-container{
 		order:2;
 	}
 	.leadership-photos-container img {
