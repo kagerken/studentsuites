@@ -16,6 +16,7 @@
 get_header();
 get_template_part('template-parts/section', 'slider');
 wp_reset_postdata();
+add_image_size('custom_size', 583, 388, false);
 ?>
 
 <div class="ht-container">
@@ -50,7 +51,8 @@ wp_reset_postdata();
 						</div>
 						<div class="ss-container grid-row">
 							<div class="infographic m-b-margin l-h-padding">
-								<?php the_post_thumbnail( 'total-portfolio-thumb' ); ?>
+								<a href="<?php $src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full', false );
+  echo $src[0]; ?>" target="_blank"><?php the_post_thumbnail( 'custom_size' ); ?></a>
 							</div>
 							<div class="ss-center-right m-b-margin l-h-padding">
 								<?php the_content() ?>
@@ -62,10 +64,14 @@ wp_reset_postdata();
 					wp_reset_postdata();
 				?>
 			<?php endif; ?>
-		
+	
+	<h2>Check out the work we've done for:</h2>
     <div id="bottom">
-        <div class="ss-call-to-action"><a href="#" title="">Call To Action</a></div>
-        <div class="ss-call-to-action"><a href="#" title="">Call To Action</a></div>
+        <a href="https://tdegisi.web.csit.jccc.edu/studentsuites/category/college-attributes/community-college/" class="ss-call-to-action">Community Colleges</a>
+        <a href="https://tdegisi.web.csit.jccc.edu/studentsuites/category/college-attributes/public/" class="ss-call-to-action">Public<br> Colleges</a>
+		<a href="https://tdegisi.web.csit.jccc.edu/studentsuites/category/college-attributes/private/" class="ss-call-to-action">Private<br> Colleges</a>
+		<a href="https://tdegisi.web.csit.jccc.edu/studentsuites/category/college-attributes/hbcu/" class="ss-call-to-action one-line">HBCU</a>
+		<a href="https://tdegisi.web.csit.jccc.edu/studentsuites/category/college-attributes/4-year/" class="ss-call-to-action">4 Year<br> Schools</a>
     </div>
 
 		</main>

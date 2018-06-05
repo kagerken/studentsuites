@@ -10,20 +10,26 @@
 get_header(); ?>
 <header class="ht-main-header">
 	<div class="ht-container">
-		<h1><?php
-			the_archive_description();
-		?>
+		<h1><?php single_cat_title(); ?>
 		</h1>
 	</div>
 </header><!-- .ht-main-header -->
-
 <div class="ht-container">
 	<div class="content-area">
 		<main id="main" class="site-main" role="main">
-		<?php if (have_posts() ) : ?>
+
+		
+		<?php
+	
+		$args = array('cat'=>12,'post_type'=>'any');
+		$query = new WP_Query($args);
+		?>
+
+		<?php if ($query->have_posts() ) : ?>
 			<div class="grid-row grid-flex-wrap">
+
 			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+			<?php while ( $query->have_posts() ) : $query->the_post(); ?>
 				
 				<?php
 
